@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_swipe_detector/flutter_swipe_detector.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/addTo_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/storiesText_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/settings_screen.dart';
 
@@ -87,6 +88,8 @@ class _UserDetailsState extends State<UserDetails> {
                 ),),
                 StoriesText(),
                 const SizedBox(height: 4,),
+                AddTo("My"),
+                AddTo("Our"),
                 const Padding(padding: EdgeInsets.only(top: 30),
                 child: Icon(
                   Icons.gavel_sharp,
