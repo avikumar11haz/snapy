@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_swipe_detector/flutter_swipe_detector.dart';
+import 'package:snapy/bottomnavbar_option5/settings_screen.dart';
 
 class UserDetails extends StatefulWidget {
   const UserDetails({Key? key}) : super(key: key);
@@ -43,7 +44,7 @@ class _UserDetailsState extends State<UserDetails> {
                   ),
                   onTap: (){
                     Navigator.push(
-                      context, MaterialPageRoute(builder: (_) => null));
+                      context, MaterialPageRoute(builder: (_) => const Settings()));
                   },
                 )
               ],
