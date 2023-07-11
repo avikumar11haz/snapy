@@ -120,10 +120,12 @@ class _UserDetailsState extends State<UserDetails> {
             ),
           ),),
         ),
-        onSwipeLeft: (context){
+        onSwipeLeft: (offset) {
+          //_addSwipe(SwipeDirection.left);
           Navigator.pop(context);
         },
-        onSwipeRight: (context){
+        onSwipeRight: (offset) {
+          //_addSwipe(SwipeDirection.right);
           Navigator.pop(context);
         },
       ),

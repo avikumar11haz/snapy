@@ -26,7 +26,7 @@ class _Del5State extends State<Del5> {
                     context: context,
                     builder: (context){
 
-                    return UserDetails();
+                    return const UserDetails();
                     });
               },
               child: IconButton(
@@ -37,7 +37,7 @@ class _Del5State extends State<Del5> {
                       color: Colors.white,
                       shape: BoxShape.circle,
                     ),
-                    child: const  Icon(Icons.supervised_user_circle,
+                    child: const Icon(Icons.supervised_user_circle,
                     color: Colors.black, size: 30,),
                   )),
             ),
@@ -75,7 +75,7 @@ class _Del5State extends State<Del5> {
                       return;
                       });
                 },
-                child: Padding(
+                child: const Padding(
                   padding: EdgeInsets.only(
                     left: 45,
                     right: 8,
