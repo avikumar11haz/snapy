@@ -5,6 +5,8 @@ import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/addTo_Widget.dar
 import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/privateStory_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/storiesText_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/BitmojiSection/bitmojiText_Widget.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/BitmojiSection/bitmoji_Widget1.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/BitmojiSection/bitmoji_Widget2.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/FriendsSection/friendsSection_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/FriendsSection/friendsText_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/settings_screen.dart';
@@ -94,15 +96,22 @@ class _UserDetailsState extends State<UserDetails> {
                 const SizedBox(height: 4,),
                 AddTo("My"),
                 AddTo("Our"),
-
+                //TODO: private story widget
                 PrivateStory(),
-
+                //TODO: friends text
                 FriendsText(),
-
+                //TODO: friends section
                 FriendsSection("Add Friends", Icons.supervised_user_circle),
                 FriendsSection("My Friends", Icons.list_alt_outlined),
-
+                //TODO: Bitmoji text
                 BitmojiText(),
+                //TODO: Bitmoji Widget1
+                bitmojiWidget1(),
+                //TODO: Bitmoji Widget2
+                bitmojiWidget2(),
+                //TODO: Bitmoji Widget3
+                //Snap Map Text
+                //Snap map map
 
                 const Padding(padding: EdgeInsets.only(top: 30),
                 child: Icon(
