@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/dicoverSubscription_widget.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
 import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
 
 
@@ -110,10 +112,16 @@ class _Del5State extends State<Del5> {
                   bottom: 8,
                   top: 4,
                 ),
-                children: [],
+                children: [
+                  discoverSubscription_widget("The top choice to replace the depp in fantastic blueprint"),
+                  discoverSubscription_widget("The top choice to replace the depp in fantastic blueprint"),
+                  discoverSubscription_widget("The top choice to replace the depp in fantastic blueprint"),
+                  discoverSubscription_widget("The top choice to replace the depp in fantastic blueprint"),
+                  discoverSubscription_widget("The top choice to replace the depp in fantastic blueprint"),
+                ],
               ),
             ),
-            SizedBox(height: 8,),
+            const SizedBox(height: 8,),
             Container(
               child: const Text(
                 "Continue Watching",
@@ -133,7 +141,11 @@ class _Del5State extends State<Del5> {
                   bottom: 8,
                   top: 4,
                 ),
-                children: [],
+                children: [
+                  discoverSubscription_widget("The top choice to replace the depp in fantastic blueprint"),
+                  discoverSubscription_widget("The top choice to replace the depp in fantastic blueprint"),
+                  discoverSubscription_widget("The top choice to replace the depp in fantastic blueprint"),
+                ],
               ),
             ),
             const SizedBox(height: 8,),
@@ -151,13 +163,19 @@ class _Del5State extends State<Del5> {
               right: 10,
               top: 2,
             ),
-            child: GridView.count(crossAxisCount: 8,
+            child: GridView.count(crossAxisCount: 2,
               childAspectRatio: 1 / 1.6,
               mainAxisSpacing: 13,
-              crossAxisSpacing: 2,
+              crossAxisSpacing: 8,
               physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
-              children: [],
+              children: [
+                forYou_widget("No gains are more important than these gains"),
+                forYou_widget("No gains are more important than these gains"),
+                forYou_widget("No gains are more important than these gains"),
+                forYou_widget("No gains are more important than these gains"),
+                forYou_widget("No gains are more important than these gains"),
+              ],
             ),
             ),
             const SizedBox(height: 10,),
