@@ -37,8 +37,8 @@ Widget AddTo(text){
       ],
     ),
     Spacer(),
-    Padding(padding: EdgeInsets.only(right: 8),
-    child: Icon(Icons.more_horiz, color: Colors.grey, size: 30,),
+    const Padding(padding: EdgeInsets.only(right: 8),
+      child: Icon(Icons.more_horiz, color: Colors.grey, size: 30,),
     ),
 
 
