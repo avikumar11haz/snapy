@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/BitmojiSection/bitmojiWidget_Icon.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/BitmojiSection/bitmojiWidget_text.dart';
 
 Widget bitmojiWidget1(){
   return Padding(padding: const EdgeInsets.only(
@@ -29,6 +30,7 @@ Widget bitmojiWidget1(){
             //TODO: Bitmoji Icon
             bitmojiIcon(Icons.shopping_cart),
             //TODO: BitmojiText2
+            bitmojiText2("Edit my Bitmoji"),
           ],
         ),
         Spacer(),
