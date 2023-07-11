@@ -11,6 +11,7 @@ import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/BitmojiSec
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/FriendsSection/friendsSection_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/FriendsSection/friendsText_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/SnapMapSection/snapMapText_Widget.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/SnapMapSection/snapMapWidget_Map.dart';
 import 'package:snapy/bottomnavbar_option5/settings_screen.dart';
 
 class UserDetails extends StatefulWidget {
@@ -116,6 +117,7 @@ class _UserDetailsState extends State<UserDetails> {
                 //Snap Map Text
                 snapMapText(),
                 //Snap map map
+                snapMap_Map(context),
 
                 const Padding(padding: EdgeInsets.only(top: 30),
                 child: Icon(
