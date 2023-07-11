@@ -7,6 +7,7 @@ import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/storiesText_Widg
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/BitmojiSection/bitmojiText_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/BitmojiSection/bitmoji_Widget1.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/BitmojiSection/bitmoji_Widget2.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/BitmojiSection/bitmoji_Widget3.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/FriendsSection/friendsSection_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/FriendsSection/friendsText_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/settings_screen.dart';
@@ -110,6 +111,7 @@ class _UserDetailsState extends State<UserDetails> {
                 //TODO: Bitmoji Widget2
                 bitmojiWidget2(),
                 //TODO: Bitmoji Widget3
+                bitmojiWidget3(),
                 //Snap Map Text
                 //Snap map map
 
