@@ -4,6 +4,7 @@ import 'package:flutter_swipe_detector/flutter_swipe_detector.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/addTo_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/privateStory_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/storiesText_Widget.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/FriendsSection/friendsSection_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/FriendsSection/friendsText_Widget.dart';
 import 'package:snapy/bottomnavbar_option5/settings_screen.dart';
 
@@ -96,6 +97,9 @@ class _UserDetailsState extends State<UserDetails> {
                 PrivateStory(),
 
                 FriendsText(),
+
+                FriendsSection("Add Friends", Icons.supervised_user_circle),
+                FriendsSection("My Friends", Icons.list_alt_outlined),
 
                 const Padding(padding: EdgeInsets.only(top: 30),
                 child: Icon(
