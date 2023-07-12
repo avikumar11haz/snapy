@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/recentItem_widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/storyWidget_item.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/user_name_widget_item.dart';
 
 class Search extends StatefulWidget {
   const Search({Key? key}) : super(key: key);
@@ -114,7 +115,6 @@ class _SearchState extends State<Search> {
                     top: 4,
                   ),
                   children: [
-                    // TODO: recentItem widget
                     recentItem_widget(),
                     recentItem_widget(),
                     recentItem_widget(),
@@ -154,7 +154,7 @@ class _SearchState extends State<Search> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         storyWidget(false),
-                        // userName(context),
+                        userName(context),
                         // Spacer(),
                         // subcribeWidget(true),
                       ],
@@ -174,7 +174,7 @@ class _SearchState extends State<Search> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       storyWidget(false),
-                      // userName(context),
+                      userName(context),
                       // Spacer(),
                       // subcribeWidget(true),
                     ],
@@ -194,7 +194,7 @@ class _SearchState extends State<Search> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       storyWidget(false),
-                      // userName(context),
+                      userName(context),
                       // Spacer(),
                       // subcribeWidget(true),
                     ],
