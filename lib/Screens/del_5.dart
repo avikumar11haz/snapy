@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/dicoverSubscription_widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
@@ -75,7 +76,7 @@ class _Del5State extends State<Del5> {
                     isScrollControlled: true,
                       context: context,
                       builder: (context){
-                      return;
+                      return const AddFriends();
                       });
                 },
                 child: const Padding(
