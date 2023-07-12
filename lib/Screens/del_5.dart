@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/dicoverSubscription_widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
 import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
@@ -47,7 +48,7 @@ class _Del5State extends State<Del5> {
               icon: const Icon(Icons.search, color: Colors.white, size: 30,),
                 onPressed: (){
                 Navigator.push(
-                  context, MaterialPageRoute(builder: (_) => null)
+                  context, MaterialPageRoute(builder: (_) => const Search())
                 );
                 }, ),
             const Expanded(child: Center(
