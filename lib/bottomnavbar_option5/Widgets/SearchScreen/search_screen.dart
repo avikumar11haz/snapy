@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/recentItem_widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/storyWidget_item.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/subscribe_widget_item.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/trending_lenses_widget_username_item.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/user_name_widget_item.dart';
 
 class Search extends StatefulWidget {
@@ -277,7 +278,7 @@ class _SearchState extends State<Search> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       storyWidget(true),
-                      // trendingLenses_userName(context)
+                      trendingLenses_userName(context)
                     ],
                   ),
                 ),
@@ -297,7 +298,7 @@ class _SearchState extends State<Search> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       storyWidget(true),
-                      // trendingLenses_userName(context)
+                      trendingLenses_userName(context)
                     ],
                   ),
                 ),
@@ -321,7 +322,7 @@ class _SearchState extends State<Search> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       storyWidget(true),
-                      // trendingLenses_userName(context)
+                      trendingLenses_userName(context)
                     ],
                   ),
                 ),
