@@ -221,8 +221,135 @@ class _SearchState extends State<Search> {
                     ],
                   ),
                 ),
-              )
+              ),
+              Padding(padding: const EdgeInsets.only(top: 16.0, bottom: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    child: Text(
+                      "Trending Lenses",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        child: const Text(
+                          "Explore Lenses",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500
+                          ),
+                        ),
+                      ),
+                      const Icon(Icons.arrow_forward_ios, color: Colors.grey,)
+                    ],
+                  )
+                ],
+              ),),
+              // 1
+              Container(
+                height: 65,
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(12),
+                    topRight: Radius.circular(12)
+                  )
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 8.0, bottom: 8),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // storyWidget(true),
+                      // trendingLenses_userName(context)
+                    ],
+                  ),
+                ),
+              ),
 
+              Divider(height: 0.25, color: Colors.grey[350],),
+
+              //2
+              Container(
+                height: 65,
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 8.0, bottom: 8),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // storyWidget(true),
+                      // trendingLenses_userName(context)
+                    ],
+                  ),
+                ),
+              ),
+
+              Divider(height: 0.25, color: Colors.grey[350],),
+
+              //3
+              Container(
+                height: 65,
+                decoration: const BoxDecoration(
+                    color: Colors.white,
+                    // borderRadius: BorderRadius.only(
+                    //     topLeft: Radius.circular(12),
+                    //     topRight: Radius.circular(12)
+                    // )
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 8.0, bottom: 8),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // storyWidget(true),
+                      // trendingLenses_userName(context)
+                    ],
+                  ),
+                ),
+              ),
+
+              Divider(height: 0.25, color: Colors.grey[350],),
+
+              //Done
+              Container(
+                height: 45,
+                decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(12),
+                        topRight: Radius.circular(12)
+                    )
+                ),
+                child: const Padding(
+                  padding: EdgeInsets.only(top: 8.0, bottom: 8),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        "View More",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: 30,),
             ],
           ),
         ),
