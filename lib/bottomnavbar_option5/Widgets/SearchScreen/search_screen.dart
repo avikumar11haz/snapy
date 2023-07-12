@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/recentItem_widget.dart';
 
 class Search extends StatefulWidget {
   const Search({Key? key}) : super(key: key);
@@ -113,6 +114,11 @@ class _SearchState extends State<Search> {
                   ),
                   children: [
                     // TODO: recentItem widget
+                    recentItem_widget(),
+                    recentItem_widget(),
+                    recentItem_widget(),
+                    recentItem_widget(),
+                    recentItem_widget(),
                   ],
                 ),
               ),
