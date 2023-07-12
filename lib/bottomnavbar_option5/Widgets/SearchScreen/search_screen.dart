@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/recentItem_widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/storyWidget_item.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/subscribe_widget_item.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/user_name_widget_item.dart';
 
 class Search extends StatefulWidget {
@@ -155,8 +156,8 @@ class _SearchState extends State<Search> {
                       children: [
                         storyWidget(false),
                         userName(context),
-                        // Spacer(),
-                        // subcribeWidget(true),
+                        const Spacer(),
+                        subscribeWidget(false),
                       ],
                     ),
                 ),
@@ -175,8 +176,8 @@ class _SearchState extends State<Search> {
                     children: [
                       storyWidget(false),
                       userName(context),
-                      // Spacer(),
-                      // subcribeWidget(true),
+                      const Spacer(),
+                      subscribeWidget(true),
                     ],
                   ),
                 ),
@@ -195,8 +196,8 @@ class _SearchState extends State<Search> {
                     children: [
                       storyWidget(false),
                       userName(context),
-                      // Spacer(),
-                      // subcribeWidget(true),
+                      const Spacer(),
+                      subscribeWidget(false),
                     ],
                   ),
                 ),
