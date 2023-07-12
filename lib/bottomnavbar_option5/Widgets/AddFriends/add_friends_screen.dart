@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
 
 class AddFriends extends StatefulWidget {
   const AddFriends({Key? key}) : super(key: key);
@@ -145,7 +146,109 @@ class _AddFriendsState extends State<AddFriends> {
               )
             ],
             flexibleSpace: _MyAppSpace(),
-          )
+          ),
+          SliverList(delegate: SliverChildBuilderDelegate((context, index){
+            return Container(
+              child: Column(
+                children: [
+                  Padding(padding: EdgeInsets.only(left: 15, top: 12, bottom: 12),
+                  child: Container(
+                    child: Text("Added Me",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700
+                    ),),
+                    alignment: Alignment.centerLeft,
+                  ),),
+                  addMe("Mountain", "mountain3655", "By Search"),
+                  const Divider(
+                    height: 1,
+                  ),
+                  addMe("Parteek Kumar", "digital_parteek_39", "By Quick Add"),
+                  const Divider(height: 1,),
+                  addMe("Chirag Bajaj", "bajaj_cc_15", "By Phone"),
+                  const Divider(height: 1,),
+                  Padding(padding: const EdgeInsets.only(left: 15, right: 15),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.white,
+                    alignment: Alignment.center,
+                    child: const Padding(
+                      padding: EdgeInsets.only(top: 8, bottom: 8),
+                      child: Text("View 60 More",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 13,
+                      ),),
+                    ),
+                  ),),
+                  const Padding(padding: EdgeInsets.only(left: 15, right: 15, top: 10, bottom: 10),
+                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Quick Add",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700
+                      ),),
+                      Row(
+                        children: [
+                          Text("All Contacts",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 12,
+                            color: Colors.grey
+                          ),),
+                          Icon(Icons.arrow_forward_ios,
+                            color: Colors.grey, size: 14,)
+                        ],
+                      )
+                    ],
+                  ),),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+                  quickAdd("Sanju Chaudhary", "sanana", true),
+                  const Divider(height: 1,),
+
+                ],
+              ),
+            );
+          }))
         ],
       ),
     );
@@ -220,16 +323,60 @@ class _MyAppSpace extends StatelessWidget {
                      Row(
                        children: [
                          Padding(padding: EdgeInsets.all(8.0),
-                         child: Icon(Icons.search, color: Colors.black,),)
+                         child: Icon(Icons.search, color: Colors.black,),),
+                         Text("Find friends",style: TextStyle(
+                           color: Colors.grey
+                         ),)
                        ],
-                     )
+                     ),
+                     Spacer(),
+                     Padding(padding: EdgeInsets.all(8.0),
+                     child: Icon(Icons.contact_page,
+                     color: Colors.black,
+                     ),)
                    ],
                  ),
               ),)
             ],
-          ),)
+          ),),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(padding: const EdgeInsets.only(top: 8.0),
+                  child: Opacity(
+                    opacity: opacity,
+                    child: Stack(
+                      alignment: Alignment.topCenter,
+                      children: [
+                        getTitle("Add friends")
+                      ],
+                    ),
+                  ),)
+            ],
+          )
         ],
       );
     });
   }
+
+  Widget getImage(){
+    return Container(
+      width: double.infinity, height: 120, color: Colors.grey[200],
+    );
+  }
+
+  Widget getTitle(String text){
+    return Padding(padding: const EdgeInsets.only(top: 14),
+    child: Text(
+      text,
+      textAlign: TextAlign.center,
+      style: const TextStyle(
+        color: Colors.black,
+        fontSize: 26.0,
+        fontWeight: FontWeight.bold
+      ),
+    ),);
+  }
+
 }
+
