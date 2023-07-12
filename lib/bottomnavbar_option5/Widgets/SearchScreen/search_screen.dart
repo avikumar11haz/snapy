@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/recentItem_widget.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/storyWidget_item.dart';
 
 class Search extends StatefulWidget {
   const Search({Key? key}) : super(key: key);
@@ -152,7 +153,7 @@ class _SearchState extends State<Search> {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        // storyWidget(false),
+                        storyWidget(false),
                         // userName(context),
                         // Spacer(),
                         // subcribeWidget(true),
@@ -168,11 +169,11 @@ class _SearchState extends State<Search> {
                   color: Colors.white,
                 ),
                 child: Padding(
-                  padding: EdgeInsets.only(top: 8.0, bottom: 8),
+                  padding: const EdgeInsets.only(top: 8.0, bottom: 8),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      // storyWidget(false),
+                      storyWidget(false),
                       // userName(context),
                       // Spacer(),
                       // subcribeWidget(true),
@@ -188,11 +189,11 @@ class _SearchState extends State<Search> {
                   color: Colors.white,
                 ),
                 child: Padding(
-                  padding: EdgeInsets.only(top: 8.0, bottom: 8),
+                  padding: const EdgeInsets.only(top: 8.0, bottom: 8),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      // storyWidget(false),
+                      storyWidget(false),
                       // userName(context),
                       // Spacer(),
                       // subcribeWidget(true),
@@ -204,15 +205,15 @@ class _SearchState extends State<Search> {
               // Done
               Container(
                 height: 45,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     bottomRight: Radius.circular(12),
                     bottomLeft: Radius.circular(12),
                   )
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.only(
+                child: const Padding(
+                  padding: EdgeInsets.only(
                     top: 8.0, bottom: 8
                   ),
                   child: Row(
@@ -233,7 +234,7 @@ class _SearchState extends State<Search> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    child: Text(
+                    child: const Text(
                       "Trending Lenses",
                       style: TextStyle(
                         color: Colors.black,
@@ -274,7 +275,7 @@ class _SearchState extends State<Search> {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      // storyWidget(true),
+                      storyWidget(true),
                       // trendingLenses_userName(context)
                     ],
                   ),
@@ -294,7 +295,7 @@ class _SearchState extends State<Search> {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      // storyWidget(true),
+                      storyWidget(true),
                       // trendingLenses_userName(context)
                     ],
                   ),
@@ -318,7 +319,7 @@ class _SearchState extends State<Search> {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      // storyWidget(true),
+                      storyWidget(true),
                       // trendingLenses_userName(context)
                     ],
                   ),
