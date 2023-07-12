@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
+import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_me_widget.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/quick_add_widget.dart';
+
 class AddFriends extends StatefulWidget {
   const AddFriends({Key? key}) : super(key: key);
 
@@ -151,7 +154,7 @@ class _AddFriendsState extends State<AddFriends> {
             return Container(
               child: Column(
                 children: [
-                  Padding(padding: EdgeInsets.only(left: 15, top: 12, bottom: 12),
+                  Padding(padding: const EdgeInsets.only(left: 15, top: 12, bottom: 12),
                   child: Container(
                     child: Text("Added Me",
                     style: TextStyle(
