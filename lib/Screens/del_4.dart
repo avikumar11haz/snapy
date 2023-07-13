@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:snapy/bottomnavbar_option4/user_details_screen.dart';
-//import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
+//import 'package:snapy/bottomnavbar_option4/user_details_screen.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
+import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
 
 
 class Del4 extends StatefulWidget {
@@ -31,7 +32,7 @@ class _Del4State extends State<Del4> {
                     return const UserDetails();
                     });
               },
-              child: IconButton(
+              child: IconButton(onPressed: (){},
                 icon: Container(
                   height: 30,
                   width: 30,
@@ -45,13 +46,13 @@ class _Del4State extends State<Del4> {
                 ),
               ),
             ),
-            IconButton(onPressed: onPressed,
-                icon: Icon(
+            IconButton(onPressed: (){},
+                icon: const Icon(
                   Icons.search,
                   color: Colors.white,
                   size: 30,
                 )),
-            Expanded(child: Center(
+            const Expanded(child: Center(
               child: Text(
                 "Stories",
                 style: TextStyle(
@@ -78,8 +79,8 @@ class _Del4State extends State<Del4> {
                         //addFriends();
                       });
                 },
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 45, right: 8.0),
+                child: const Padding(
+                  padding: EdgeInsets.only(left: 45, right: 8.0),
                   child: Icon(
                     Icons.add_circle_outline_sharp,
                     color: Colors.white,
@@ -102,15 +103,15 @@ class _Del4State extends State<Del4> {
                             Container(
                               alignment: Alignment.centerLeft,
                               height: 55,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.only(
                                   topRight: Radius.circular(12),
                                   topLeft: Radius.circular(12),
                                 )
                               ),
-                              child: Padding(
-                                padding: const EdgeInsets.only(left: 8.0),
+                              child: const Padding(
+                                padding: EdgeInsets.only(left: 8.0),
                                 child: Text(
                                   "Manage Subscription and Notification",
                                   style: TextStyle(
@@ -125,13 +126,13 @@ class _Del4State extends State<Del4> {
                             Container(
                               alignment: Alignment.centerLeft,
                               height: 55,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Colors.white,
                                 // borderRadius: BorderRadius.only(
                                 // )
                               ),
-                              child: Padding(
-                                padding: const EdgeInsets.only(left: 8.0),
+                              child: const Padding(
+                                padding: EdgeInsets.only(left: 8.0),
                                 child: Text(
                                   "View Hidden Channels",
                                   style: TextStyle(
@@ -150,10 +151,10 @@ class _Del4State extends State<Del4> {
                               child: Container(
                                 alignment: Alignment.center,
                                 height: 45,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.white,
                                 ),
-                                child: Text(
+                                child: const Text(
                                   "Done",
                                   style: TextStyle(
                                     color: Colors.black,
@@ -177,7 +178,7 @@ class _Del4State extends State<Del4> {
                       color: Colors.grey[350],
                       shape: BoxShape.circle,
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Icon(
                         Icons.more_horiz,
                         color: Colors.white,
@@ -233,7 +234,7 @@ class _Del4State extends State<Del4> {
                 child: Row(
                   children: [
                     Container(
-                      child: Text(
+                      child: const Text(
                         "Subscriptions",
                         style: TextStyle(
                           color: Colors.white,
@@ -268,7 +269,7 @@ class _Del4State extends State<Del4> {
               ),
               const SizedBox(height: 4,),
               Container(
-                child: Text(
+                child: const Text(
                   "For You",
                   style: TextStyle(
                     color: Colors.white,
@@ -283,7 +284,7 @@ class _Del4State extends State<Del4> {
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 15,
                 childAspectRatio: 1 / 1.4,
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 children: [
                   // forYou_widget("Shubhi Kat", true),
