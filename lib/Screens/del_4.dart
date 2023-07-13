@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:snapy/bottomnavbar_option4/for_you_widget.dart';
+import 'package:snapy/bottomnavbar_option4/friends_widget.dart';
 import 'package:snapy/bottomnavbar_option4/subscription_widget.dart';
 //import 'package:snapy/bottomnavbar_option4/user_details_screen.dart';
 //import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
@@ -203,7 +204,7 @@ class _Del4State extends State<Del4> {
           ListView(
             padding: const EdgeInsets.only(top: 8, left: 10),
             children: <Widget>[
-              // friendsMyStory(),
+               // friendsMyStory(),
               Container(
                 height: 145,
                 child: ListView(
@@ -214,12 +215,12 @@ class _Del4State extends State<Del4> {
                     top: 4
                   ),
                   children: <Widget>[
-                    // friends("parteek39"),
-                    // friends("chirag15"),
-                    // friends("Debo16"),
-                    // friends("Jitesh26"),
-                    // friends("Abhay2"),
-                    // friends("Nishant37"),
+                    friends("parteek39"),
+                    friends("chirag15"),
+                    friends("Debo16"),
+                    friends("Jitesh26"),
+                    friends("Abhay2"),
+                    friends("Nishant37"),
                   ],
                 ),
               ),

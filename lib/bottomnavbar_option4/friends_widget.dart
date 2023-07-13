@@ -6,7 +6,7 @@ Widget friends(username){
       Container(
         height: 85,
         width: 85,
-        padding: EdgeInsets.all(3),
+        padding: const EdgeInsets.all(3),
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           border: Border.all(
@@ -15,7 +15,7 @@ Widget friends(username){
           )
         ),
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.pink,
             shape: BoxShape.circle,
           ),
@@ -29,7 +29,7 @@ Widget friends(username){
             maxLines: 2,
             overflow: TextOverflow.clip,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.w600,
               fontSize: 15,
