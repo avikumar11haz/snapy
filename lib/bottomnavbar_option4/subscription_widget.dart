@@ -32,7 +32,24 @@ Widget subscriptions_widget(headline, isVerified){
               height: 1.3
             ),
           ),),
-
+          isVerified
+          ? Padding(padding: const EdgeInsets.only(
+            left: 4.0, bottom: 2
+          ),
+          child: Container(
+            height: 14,
+            width: 14,
+            decoration: const BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.yellow,
+            ),
+            child: const Icon(
+              Icons.star,
+              color: Colors.black,
+                size: 12,
+            ),
+          ),)
+              :Container(),
         ],
       ),
     ),
