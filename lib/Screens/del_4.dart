@@ -3,6 +3,7 @@ import 'package:snapy/bottomnavbar_option4/for_you_widget.dart';
 import 'package:snapy/bottomnavbar_option4/friends_mystory_widget.dart';
 import 'package:snapy/bottomnavbar_option4/friends_widget.dart';
 import 'package:snapy/bottomnavbar_option4/subscription_widget.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen.dart';
 //import 'package:snapy/bottomnavbar_option4/user_details_screen.dart';
 //import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
 import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
@@ -79,7 +80,7 @@ class _Del4State extends State<Del4> {
                     isScrollControlled: true,
                       context: context,
                       builder: (context){
-                      return ;//addFriends();
+                      return const AddFriends();//addFriends();
                       });
                 },
                 child: const Padding(
@@ -227,7 +228,7 @@ class _Del4State extends State<Del4> {
               ),
               GestureDetector(
                 onTap: (){
-                  print("Pushed");
+                  //print("Pushed");
                   Navigator.push(context,
                   MaterialPageRoute(builder: (_)=> null
                       //subscriptionScreen(),
