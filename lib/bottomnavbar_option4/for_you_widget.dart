@@ -25,6 +25,38 @@ Widget forYou_widget(String headline, isVerified){
                 height: 1.4
             ),
           ),
+          Padding(padding: EdgeInsets.only(
+            left: 4,
+            bottom: 2,
+            top: 2
+          ),
+            child: Row(
+              children: [
+                isVerified
+                ? Container(
+                  height: 14,
+                  width: 14,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.yellow,
+                  ),
+                  child: const Icon(Icons.star,
+                  color: Colors.black,
+                  size: 12,),
+                )
+                    : Container(),
+                Padding(padding: isVerified
+                ? const EdgeInsets.only(left: 4)
+                : const EdgeInsets.only(left: 0),
+                child: Text(
+                  "Today",
+                  style: TextStyle(
+                    color: Colors.grey[700],
+                  ),
+                ),)
+              ],
+            ),
+          )
         ],
       ),
     ),
