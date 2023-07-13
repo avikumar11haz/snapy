@@ -22,7 +22,7 @@ Widget friendsMyStory() {
           color: Colors.grey[350],
           borderRadius: BorderRadius.circular(16),
         ),
-        child: Padding(
+        child: const Padding(
           padding: EdgeInsets.only(top: 3.0, bottom: 3, left: 3, right: 6),
           child: Row(
             children: [
@@ -31,7 +31,12 @@ Widget friendsMyStory() {
                 color: Colors.grey,
               ),
               Text(
-
+                "My Story",
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
               )
             ],
           ),
