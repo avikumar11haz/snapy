@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:snapy/bottomnavbar_option4/for_you_widget.dart';
 //import 'package:snapy/bottomnavbar_option4/user_details_screen.dart';
-import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
+//import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
 import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
 
 
@@ -287,12 +288,12 @@ class _Del4State extends State<Del4> {
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 children: [
-                  // forYou_widget("Shubhi Kat", true),
-                  // forYou_widget("Akshay Kumar", true),
-                  // forYou_widget("Urvashi Ruteala", true),
-                  // forYou_widget("Amitabh Bachan Caught boxing", true),
-                  // forYou_widget("Selena buys a new house", false),
-                  // forYou_widget("Kylie", true),
+                  forYou_widget("Shubhi Kat", true),
+                  forYou_widget("Akshay Kumar", true),
+                  forYou_widget("Urvashi Ruteala", true),
+                  forYou_widget("Amitabh Bachan Caught boxing", true),
+                  forYou_widget("Selena buys a new house", false),
+                  forYou_widget("Kylie", true),
 
                 ],
               ),),

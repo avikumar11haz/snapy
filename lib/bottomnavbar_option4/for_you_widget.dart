@@ -10,6 +10,8 @@ Widget forYou_widget(String headline, isVerified){
     child: Padding(
       padding: const EdgeInsets.only(left: 6, bottom: 6, right: 2.0),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             headline,
