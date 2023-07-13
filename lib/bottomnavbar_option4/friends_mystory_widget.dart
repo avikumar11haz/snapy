@@ -8,7 +8,7 @@ Widget friendsMyStory() {
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: [
       Container(
-        child: Text(
+        child: const Text(
           "Friends",
           style: TextStyle(
             color: Colors.white,
