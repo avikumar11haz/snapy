@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
 
 
 class Del4 extends StatefulWidget {
@@ -237,10 +238,61 @@ class _Del4State extends State<Del4> {
                           fontWeight: FontWeight.w700,
                         ),
                       ),
-                    )
+                    ),
+                    Icon(Icons.arrow_forward_ios,
+                    color: Colors.grey[600],
+                    size: 20,)
                   ],
                 ),
-              )
+              ),
+              Container(
+                height: 170,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.only(
+                    right: 8,
+                    bottom: 8,
+                    top: 4
+                  ),
+                  children: <Widget>[
+                    subscriptions_widget("Demo name", true),
+                    subscriptions_widget("Chirag Bajaj", false),
+                    subscriptions_widget("Parteek", true),
+                    subscriptions_widget("Mohan", true),
+                    subscriptions_widget("Katrina Kaif", true),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 4,),
+              Container(
+                child: Text(
+                  "For You",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                    fontSize: 20
+                  ),
+                ),
+              ),
+              Padding(padding: const EdgeInsets.only(right: 10.0, top: 4),
+               child: GridView.count(
+                  crossAxisCount: 2,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 15,
+                childAspectRatio: 1 / 1.4,
+                physics: NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
+                children: [
+                  forYou_widget("Shubhi Kat", true),
+                  forYou_widget("Akshay Kumar", true),
+                  forYou_widget("Urvashi Ruteala", true),
+                  forYou_widget("Amitabh Bachan Caught boxing", true),
+                  forYou_widget("Selena buys a new house", false),
+                  forYou_widget("Kylie", true),
+
+                ],
+              ),),
+              const SizedBox(height: 10,),
             ],
           )
         ],
