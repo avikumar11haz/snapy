@@ -3,6 +3,7 @@ import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/StorySection/dicoverSubscription_widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
+import 'package:snapy/bottomnavbar_option5/settings_screen.dart';
 import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
 
 
@@ -34,7 +35,11 @@ class _Del5State extends State<Del5> {
                     });
               },
               child: IconButton(
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (_)=> const Settings())
+                  );
+                },
                   icon: Container(
                     height: 30,width: 30,
                     decoration: const BoxDecoration(

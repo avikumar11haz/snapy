@@ -5,6 +5,7 @@ import 'package:snapy/bottomnavbar_option4/friends_widget.dart';
 import 'package:snapy/bottomnavbar_option4/subscription_widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/subscribe_widget_item.dart';
+import 'package:snapy/bottomnavbar_option5/settings_screen.dart';
 //import 'package:snapy/bottomnavbar_option4/user_details_screen.dart';
 //import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
 import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
@@ -38,7 +39,11 @@ class _Del4State extends State<Del4> {
                     return const UserDetails();
                     });
               },
-              child: IconButton(onPressed: (){},
+              child: IconButton(onPressed: (){
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (_)=> const Settings())
+                );
+              },
                 icon: Container(
                   height: 30,
                   width: 30,
