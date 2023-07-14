@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
+import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
 
 
 class Del2 extends StatefulWidget {
@@ -28,7 +29,7 @@ class _Del2State extends State<Del2> {
                   isScrollControlled: true,
                     context: context,
                     builder: (context){
-                    return userDetails();
+                    return UserDetails();
                     });
               },
               child: IconButton(onPressed: (){},
