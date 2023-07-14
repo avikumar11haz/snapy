@@ -45,10 +45,25 @@ class _Del2State extends State<Del2> {
                 ),
               ),
             ),
-            IconButton(onPressed: (){},
-                icon: Icon(
+            IconButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (_) => Search()));
+            },
+                icon: const Icon(
                   Icons.search,
-                ))
+                  color: Colors.white,
+                  size: 30,
+                ),
+            ),
+            Expanded(child: Center(
+              child: Text(
+                "Chat",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ))
           ],
         ),
       ),
