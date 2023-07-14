@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
 
 
 class Del2 extends StatefulWidget {
@@ -47,7 +48,7 @@ class _Del2State extends State<Del2> {
               ),
             ),
             IconButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (_) => Search()));
+              Navigator.push(context, MaterialPageRoute(builder: (_) => const Search()));
             },
                 icon: const Icon(
                   Icons.search,
