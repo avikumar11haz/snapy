@@ -122,6 +122,50 @@ class _Del2State extends State<Del2> {
           )
         ],
       ),
+      body: Stack(
+        children: [
+          Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black,
+          ),
+          ListView(
+            padding: const EdgeInsets.only(
+              top: 8,
+              left: 10
+            ),
+            children: <Widget>[
+              chatItem(
+                context, "Pink City", true, "id", true
+              ),
+              const Divider(
+                thickness: 0.3,
+                color: Colors.grey,
+              ),
+              chatItem(
+                context, "Ram Vilas", false, "24h", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Surya Colony", false, "77", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Maharana Partap Chowk", false, "16", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Vijay Nagar", false, "4k", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Metro Station Marg", false, "92", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,)
+            ],
+          )
+        ],
+      ),
     );
   }
 }
