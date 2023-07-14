@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen.dart';
 
 
 class Del2 extends StatefulWidget {
@@ -77,7 +78,7 @@ class _Del2State extends State<Del2> {
                     isScrollControlled: true,
                       context: context,
                       builder: (context){
-                      return addFriends();
+                      return const AddFriends();
                       });
                 },
                 child: Padding(
@@ -96,6 +97,24 @@ class _Del2State extends State<Del2> {
                   Navigator.push(context,
                   MaterialPageRoute(builder: (_) => NewChat()));
                 },
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 0, right: 8.0),
+                  child: Container(
+                    height: 30,
+                    width: 30,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[350],
+                      shape: BoxShape.circle,
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.message,
+                        color: Colors.grey[600],
+                        size: 20,
+                      ),
+                    ),
+                  ),
+                ),
               )
             ],
           )
