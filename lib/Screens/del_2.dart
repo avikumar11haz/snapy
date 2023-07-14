@@ -66,6 +66,40 @@ class _Del2State extends State<Del2> {
             ))
           ],
         ),
+        automaticallyImplyLeading: false,
+        centerTitle: true,
+        actions: <Widget>[
+          Row(
+            children: <Widget>[
+              GestureDetector(
+                onTap: (){
+                  showModalBottomSheet(
+                    isScrollControlled: true,
+                      context: context,
+                      builder: (context){
+                      return addFriends();
+                      });
+                },
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                    left: 45, right: 8.0,
+                  ),
+                  child: Icon(
+                    Icons.add_circle_outline_sharp,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: (){
+                  Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => NewChat()));
+                },
+              )
+            ],
+          )
+        ],
       ),
     );
   }
