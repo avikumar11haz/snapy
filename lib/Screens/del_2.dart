@@ -11,18 +11,46 @@ class Del2 extends StatefulWidget {
 class _Del2State extends State<Del2> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.topCenter,
-      color: Colors.red,
-      height: MediaQuery.of(context).size.height,
-      child: SafeArea(
-          child: Text(
-            "55555",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 32,
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.black,
+        titleSpacing: 0.0,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            GestureDetector(
+              onTap: (){
+                showModalBottomSheet(
+                  isScrollControlled: true,
+                    context: context,
+                    builder: (context){
+                    return userDetails();
+                    });
+              },
+              child: IconButton(onPressed: (){},
+                icon: Container(
+                  height: 30,
+                  width: 30,
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.supervised_user_circle_outlined,
+                    color: Colors.black,
+                    size: 30,
+                  ),
+                ),
+              ),
             ),
-          )
+            IconButton(onPressed: (){},
+                icon: Icon(
+                  Icons.search,
+                ))
+          ],
+        ),
       ),
     );
   }
