@@ -15,7 +15,7 @@ class _NewChatState extends State<NewChat> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "New Chat",
           style: TextStyle(
             color: Colors.blue,
@@ -28,8 +28,8 @@ class _NewChatState extends State<NewChat> {
             onTap: (){
               Navigator.pop(context);
             },
-            child: Padding(
-              padding: const EdgeInsets.only(right: 8.0),
+            child: const Padding(
+              padding: EdgeInsets.only(right: 8.0),
               child: Icon(
                 Icons.cancel_outlined,
                 color: Colors.black,
@@ -43,7 +43,7 @@ class _NewChatState extends State<NewChat> {
         padding: const EdgeInsets.only(left: 15, right: 15.0),
         child: ListView(
           children: [
-            Divider(
+            const Divider(
               thickness: 0.6,
               height: 0.5,
             ),
