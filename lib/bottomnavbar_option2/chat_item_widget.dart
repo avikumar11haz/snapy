@@ -5,7 +5,7 @@ Widget chatItem(context, name, activeStory, time, loaded){
   return GestureDetector(
     onTap: (){
       Navigator.push(context,
-      MaterialPageRoute(builder: (_) => Chat(name)));
+      MaterialPageRoute(builder: (_) => const Chat()));
     },
     child: Padding(
       padding: const EdgeInsets.only(top: 4.0, bottom: 4),

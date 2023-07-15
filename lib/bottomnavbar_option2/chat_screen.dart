@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Chat extends StatefulWidget {
-  const Chat({Key? key}) : super(key: key);
+  String name;
+  Chat({Key? key, required this.name}) : super(key: key);
 
   @override
   State<Chat> createState() => _ChatState();
@@ -16,7 +17,7 @@ class _ChatState extends State<Chat> {
         elevation: 0,
         title: Text(
           widget.name,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.w700,
             fontSize: 22,
@@ -93,8 +94,8 @@ class _ChatState extends State<Chat> {
             onTap: (){
               Navigator.pop(context);
             },
-            child: Padding(
-              padding: const EdgeInsets.only(left: 8.0),
+            child: const Padding(
+              padding: EdgeInsets.only(left: 8.0),
               child: Icon(
                 Icons.arrow_forward_ios,
                 color: Colors.black,
@@ -109,11 +110,7 @@ class _ChatState extends State<Chat> {
           ListView(
             children: [
               date("15 July 2023"),
-              chatMessage(
-                  context,
-                  Colors.blue,
-                  "How are You?"
-              ),
+              chatMessage(context, Colors.blue, "How are You?"),
               date("15 July 2023"),
               chatMessage(context, Colors.blue, "How are You?"),
               date("15 July 2023"),
@@ -140,7 +137,7 @@ class _ChatState extends State<Chat> {
               chatMessage(context, Colors.blue, "How are You?"),
             ],
           ),
-          bottomBarChat1(context),
+          //bottomBarChat1(context),
         ],
       ),
     );
