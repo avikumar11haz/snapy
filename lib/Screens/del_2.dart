@@ -148,19 +148,19 @@ class _Del2State extends State<Del2> {
               ),
               const Divider(thickness: 0.3, color: Colors.grey,),
               chatItem(
-                  context, "Surya Colony", false, "77", true
+                  context, "Surya Colony", false, "7h", true
               ),
               const Divider(thickness: 0.3, color: Colors.grey,),
               chatItem(
-                  context, "Maharana Partap Chowk", false, "16", true
+                  context, "Maharana Partap Chowk", false, "16h", true
               ),
               const Divider(thickness: 0.3, color: Colors.grey,),
               chatItem(
-                  context, "Vijay Nagar", false, "4k", true
+                  context, "Vijay Nagar", false, "4h", true
               ),
               const Divider(thickness: 0.3, color: Colors.grey,),
               chatItem(
-                  context, "Metro Station Marg", false, "92", true
+                  context, "Metro Station Marg", false, "9h", true
               ),
               const Divider(thickness: 0.3, color: Colors.grey,)
             ],
