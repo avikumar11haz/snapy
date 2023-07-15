@@ -1,6 +1,9 @@
-import 'package:flutter/material.dart';
 
-Widget BottomBarChat1() {
+
+import 'package:flutter/material.dart';
+import 'package:snapy/bottomnavbar_option2/camera_screen.dart';
+
+Widget BottomBarChat1(context) {
   return Align(
     alignment: Alignment.bottomCenter,
     child: Container(
@@ -20,7 +23,7 @@ Widget BottomBarChat1() {
                   child: Container(
                     height: 40,
                     width: 40,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.grey,
                       shape: BoxShape.circle,
                     ),
