@@ -45,7 +45,7 @@ Widget chatItem(context, name, activeStory, time, loaded){
                         name,
                         overflow: TextOverflow.clip,
                         maxLines: 1,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.w700,
                           fontSize: 21,
