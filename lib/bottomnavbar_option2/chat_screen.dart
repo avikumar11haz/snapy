@@ -71,7 +71,7 @@ class _ChatState extends State<Chat> {
                   ),
                 ),
               ),
-              SizedBox(width: 1.5,),
+              const SizedBox(width: 1.5,),
               Container(
                 height: 35,
                 width: 50,
