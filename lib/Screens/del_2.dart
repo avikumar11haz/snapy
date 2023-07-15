@@ -138,30 +138,30 @@ class _Del2State extends State<Del2> {
             ),
             children: <Widget>[
               chatItem(
-                context, "Pink City", true, "id", true
+                context, "Parteek", true, "id", true
               ),
               const Divider(
                 thickness: 0.3,
                 color: Colors.grey,
               ),
               chatItem(
-                context, "Ram Vilas", false, "24h", true
+                context, "Ram", false, "24h", true
               ),
               const Divider(thickness: 0.3, color: Colors.grey,),
               chatItem(
-                  context, "Surya Colony", false, "7h", true
+                  context, "Yashi Srivastav", false, "7h", true
               ),
               const Divider(thickness: 0.3, color: Colors.grey,),
               chatItem(
-                  context, "Maharana Partap Chowk", false, "16h", true
+                  context, "Prithu", false, "16h", true
               ),
               const Divider(thickness: 0.3, color: Colors.grey,),
               chatItem(
-                  context, "Vijay Nagar", false, "4h", true
+                  context, "Jitesh Meena", false, "4h", true
               ),
               const Divider(thickness: 0.3, color: Colors.grey,),
               chatItem(
-                  context, "Metro Station Marg", false, "9h", true
+                  context, "Pihu", false, "9h", true
               ),
               const Divider(thickness: 0.3, color: Colors.grey,)
             ],
