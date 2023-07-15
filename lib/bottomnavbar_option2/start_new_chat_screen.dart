@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snapy/bottomnavbar_option2/user_name_widget.dart';
 
 class NewChat extends StatefulWidget {
   const NewChat({Key? key}) : super(key: key);
@@ -93,7 +94,7 @@ class _NewChatState extends State<NewChat> {
                 ],
               ),
             ),),
-            Padding(padding: const EdgeInsets.only(
+            const  Padding(padding: EdgeInsets.only(
               top: 12.0,
               bottom: 12
             ),
@@ -119,12 +120,10 @@ class _NewChatState extends State<NewChat> {
             usernameWidget("Nishant"),
             usernameWidget("Debo"),
             usernameWidget("Harshit"),
-
-
-
-
-
-
+            usernameWidget("Shrusti"),
+            usernameWidget("Anamika"),
+            usernameWidget("Anil"),
+            usernameWidget("Meena"),
           ],
         ),
       ),

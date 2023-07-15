@@ -6,7 +6,7 @@ Widget usernameWidget(name) {
   ),
   child: Text(
     name,
-    style: TextStyle(
+    style: const TextStyle(
       color: Colors.black,
       fontSize: 17,
       letterSpacing: 0.5,
