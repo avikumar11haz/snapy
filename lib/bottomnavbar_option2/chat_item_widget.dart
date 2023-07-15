@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 Widget chatItem(context, name, activeStory, time, loaded){
   return GestureDetector(
     onTap: (){
-      Navigator.push(context,
-      MaterialPageRoute(builder: (_) => Chat(name)));
+      // Navigator.push(context,
+      // MaterialPageRoute(builder: (_) => Chat(name)));
     },
     child: Padding(
       padding: const EdgeInsets.only(top: 4.0, bottom: 4),
@@ -77,12 +77,37 @@ Widget chatItem(context, name, activeStory, time, loaded){
                           style: TextStyle(
                             color: Colors.grey[350]!.withOpacity(0.3)
                           ),
+                        ),
+                        Text(
+                          time,
+                          style: TextStyle(
+                            color: Colors.grey.withOpacity(0.6),
+                            fontWeight: FontWeight.w700,
+                            fontSize: 14,
+                          ),
                         )
                       ],
                     )
                   ],
                 ),)
               ],
+            ),
+            Spacer(),
+            Container(
+              height: 40,
+              width: 40,
+              decoration: BoxDecoration(
+                border: Border(
+                  left: BorderSide(
+                    color: Colors.grey,
+                    width: 1.5
+                  )
+                )
+              ),
+              child: Icon(
+                Icons.message_outlined,
+                color: Colors.grey,
+              ),
             )
           ],
         ),
