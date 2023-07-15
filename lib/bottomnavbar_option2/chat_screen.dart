@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:snapy/bottomnavbar_option2/chat_message_widget.dart';
+import 'package:snapy/bottomnavbar_option2/date_widget.dart';
 
 class Chat extends StatefulWidget {
   String name;

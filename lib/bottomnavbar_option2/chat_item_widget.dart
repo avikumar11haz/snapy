@@ -93,7 +93,7 @@ Widget chatItem(context, name, activeStory, time, loaded){
                 ),)
               ],
             ),
-            Spacer(),
+            const Spacer(),
             Container(
               height: 40,
               width: 40,
