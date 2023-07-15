@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snapy/bottomnavbar_option2/bottom_bar_chat_widget.dart';
 import 'package:snapy/bottomnavbar_option2/chat_message_widget.dart';
 import 'package:snapy/bottomnavbar_option2/date_widget.dart';
 
@@ -139,7 +140,7 @@ class _ChatState extends State<Chat> {
               chatMessage(context, Colors.blue, "How are You?"),
             ],
           ),
-          //bottomBarChat1(context),
+          BottomBarChat1(context),
         ],
       ),
     );

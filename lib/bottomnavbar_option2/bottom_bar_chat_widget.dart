@@ -27,7 +27,7 @@ Widget BottomBarChat1(context) {
                       color: Colors.grey,
                       shape: BoxShape.circle,
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Icon(
                         Icons.camera_alt
                       ),
@@ -61,7 +61,7 @@ Widget BottomBarChat1(context) {
               ),)
             ],
           ),
-          Spacer(),
+          const Spacer(),
           Row(
             children: [
               Padding(padding: const EdgeInsets.only(
