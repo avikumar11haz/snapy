@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:snapy/bottomnavbar_option2/chat_item_widget.dart';
+import 'package:snapy/bottomnavbar_option2/start_new_chat_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
 import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
@@ -84,8 +85,8 @@ class _Del2State extends State<Del2> {
                       return const AddFriends();
                       });
                 },
-                child: Padding(
-                  padding: const EdgeInsets.only(
+                child: const Padding(
+                  padding: EdgeInsets.only(
                     left: 45, right: 8.0,
                   ),
                   child: Icon(
@@ -98,7 +99,7 @@ class _Del2State extends State<Del2> {
               GestureDetector(
                 onTap: (){
                   Navigator.push(context,
-                  MaterialPageRoute(builder: (_) => NewChat()));
+                  MaterialPageRoute(builder: (_) => const NewChat()));
                 },
                 child: Padding(
                   padding: const EdgeInsets.only(left: 0, right: 8.0),

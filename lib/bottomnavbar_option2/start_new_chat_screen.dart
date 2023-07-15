@@ -78,11 +78,12 @@ class _NewChatState extends State<NewChat> {
               bottom: 8.0
             ),
             child: Container(
-              child: Row(
+              child: const Row(
                 children: [
-                  Padding(padding: const EdgeInsets.only(right: 8.0),
+                  Padding(padding: EdgeInsets.only(right: 8.0),
                   child: Icon(Icons.supervised_user_circle,
-                  color: Colors.blue,),)
+                  color: Colors.blue,),
+                  ),
                   Text(
                     "New Group",
                     style: TextStyle(
