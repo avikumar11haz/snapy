@@ -56,7 +56,7 @@ class _ChatState extends State<Chat> {
               Container(
                 height: 35,
                 width: 50,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(18),
                     topLeft: Radius.circular(18)
