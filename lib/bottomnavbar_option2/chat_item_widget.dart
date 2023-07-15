@@ -5,7 +5,7 @@ Widget chatItem(context, name, activeStory, time, loaded){
   return GestureDetector(
     onTap: (){
       Navigator.push(context,
-      MaterialPageRoute(builder: (_) => const Chat()));
+      MaterialPageRoute(builder: (_) =>  Chat()));
     },
     child: Padding(
       padding: const EdgeInsets.only(top: 4.0, bottom: 4),
@@ -97,7 +97,7 @@ Widget chatItem(context, name, activeStory, time, loaded){
             Container(
               height: 40,
               width: 40,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 border: Border(
                   left: BorderSide(
                     color: Colors.grey,
