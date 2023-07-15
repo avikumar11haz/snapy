@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:snapy/bottomnavbar_option2/chat_screen.dart';
 
 Widget chatItem(context, name, activeStory, time, loaded){
   return GestureDetector(
     onTap: (){
-      // Navigator.push(context,
-      // MaterialPageRoute(builder: (_) => Chat(name)));
+      Navigator.push(context,
+      MaterialPageRoute(builder: (_) => Chat(name)));
     },
     child: Padding(
       padding: const EdgeInsets.only(top: 4.0, bottom: 4),
@@ -66,7 +67,7 @@ Widget chatItem(context, name, activeStory, time, loaded){
                         ),),
                         Text(
                           loaded ? "New Snap" : "Tap to Load",
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.purple,
                             fontSize: 14,
                             fontWeight: FontWeight.w700
