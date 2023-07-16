@@ -42,7 +42,7 @@ Widget charmItem(){
                 color: Colors.blue,
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: Center(
+              child: const Center(
                 child: Text(
                   "New",
                   style: TextStyle(
@@ -56,7 +56,7 @@ Widget charmItem(){
             )
           ],
         ),
-        Padding(padding: const EdgeInsets.only(top: 4.0),
+        const Padding(padding: EdgeInsets.only(top: 4.0),
         child: Text(
           "Sum Sign Compatibility",
           textAlign: TextAlign.center,

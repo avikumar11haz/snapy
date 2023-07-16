@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swipe_detector/flutter_swipe_detector.dart';
+import 'package:snapy/bottomnavbar_option2/charm_item_widget.dart';
 
 class FriendsDetails extends StatefulWidget {
   const FriendsDetails({Key? key}) : super(key: key);
@@ -228,7 +229,7 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                           ],
                         ),
                       ),),
-                      Padding(padding: const EdgeInsets.only(
+                      const Padding(padding: EdgeInsets.only(
                         top: 38.0
                       ),
                       child: Icon(
@@ -247,7 +248,7 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                           fontWeight: FontWeight.w700,
                         ),
                       ),),
-                      SizedBox(height: 75,),
+                      const SizedBox(height: 75,),
                     ],
                   ),
                 ),
