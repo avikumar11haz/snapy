@@ -18,7 +18,7 @@ Widget chatAttachment(){
         )
       ]
     ),
-    child: Center(
+    child: const Center(
       child: Text(
         "Links, addresses, usernames and other attachments saved in the Chat will appear here",
         textAlign: TextAlign.center,
