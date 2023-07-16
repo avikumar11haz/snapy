@@ -9,7 +9,7 @@ Widget chatAttachment(){
     decoration: BoxDecoration(
       color: Colors.yellow,
       borderRadius: BorderRadius.circular(18),
-      boxShadow: [
+      boxShadow: const [
         BoxShadow(
           color: Colors.grey,
           blurRadius: 1,
