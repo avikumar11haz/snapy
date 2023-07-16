@@ -166,7 +166,7 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                           fontWeight: FontWeight.w600
                         ),
                       ),),
-                      Padding(padding: const EdgeInsets.only(
+                      const Padding(padding: EdgeInsets.only(
                         top: 30.0, bottom: 15
                       ),
                       child: Text(
