@@ -39,7 +39,7 @@ class _ChatState extends State<Chat> {
           child: Container(
             height: 24,
             width: 24,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle
             ),
             child: Padding(

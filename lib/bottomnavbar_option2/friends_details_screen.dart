@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swipe_detector/flutter_swipe_detector.dart';
 import 'package:snapy/bottomnavbar_option2/charm_item_widget.dart';
+import 'package:snapy/bottomnavbar_option2/snap_map_text_widget.dart';
 
 class FriendsDetails extends StatefulWidget {
   const FriendsDetails({Key? key}) : super(key: key);
@@ -142,7 +143,7 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                       child: Container(
                         height: 100,
                         width: 100,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.yellow,
                           shape: BoxShape.circle
                         ),
