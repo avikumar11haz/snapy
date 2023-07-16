@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:snapy/bottomnavbar_option2/bottom_bar_chat_widget.dart';
 import 'package:snapy/bottomnavbar_option2/chat_message_widget.dart';
 import 'package:snapy/bottomnavbar_option2/date_widget.dart';
+import 'package:snapy/bottomnavbar_option2/friends_details_screen.dart';
 
 class Chat extends StatefulWidget {
   String name;
@@ -32,7 +33,7 @@ class _ChatState extends State<Chat> {
               isScrollControlled: true,
                 context: context,
                 builder: (context){
-                return FriendDetails();
+                return const FriendsDetails();
                 });
           },
           child: Container(

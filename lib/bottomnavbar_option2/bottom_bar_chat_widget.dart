@@ -78,5 +78,5 @@ Widget BottomBarChat1(context) {
         ],
       ),
     ),
-  )
+  );
 }
