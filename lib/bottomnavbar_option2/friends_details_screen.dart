@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swipe_detector/flutter_swipe_detector.dart';
 import 'package:snapy/bottomnavbar_option2/charm_item_widget.dart';
+import 'package:snapy/bottomnavbar_option2/chat_attachments_widget.dart';
 import 'package:snapy/bottomnavbar_option2/snap_map_text_widget.dart';
 
 class FriendsDetails extends StatefulWidget {
@@ -238,7 +239,7 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                         color: Colors.grey,
                         size: 30,
                       ),),
-                      Padding(padding: const EdgeInsets.only(
+                      const Padding(padding: EdgeInsets.only(
                         top: 15.0
                       ),
                       child: Text(
