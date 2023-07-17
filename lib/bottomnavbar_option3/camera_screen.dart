@@ -188,12 +188,43 @@ class _CameraScreen3State extends State<CameraScreen3> {
                                           ),
                                           child: Icon(Icons.rotate_right,
                                           color: Colors.red,
-                                          size: 30,),)
+                                          size: 30,),),
+                                          Padding(padding: EdgeInsets.only(bottom: 15.0),
+                                          child: Icon(Icons.flash_off,
+                                          color: Colors.red,
+                                          size: 30,),
+                                          ),
+                                          Icon(Icons.keyboard_arrow_down,
+                                          color: Colors.red,)
                                         ],
                                       ),
                                     ),
                                   )
                                 ],
+                              )
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              GestureDetector(
+                                onTap: (){
+                                  _onCapturePressed(context);
+                                },
+                                child: Padding(
+                                  padding: const EdgeInsets.only(bottom: 24.0),
+                                  child: Container(
+                                    height: 75,
+                                    width: 75,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      border: Border.all(
+                                        color: Colors.red,
+                                        width: 4
+                                      )
+                                    ),
+                                  ),
+                                ),
                               )
                             ],
                           )
