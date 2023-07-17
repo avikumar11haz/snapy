@@ -1,29 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:snapy/bottomnavbar_option3/camera_screen.dart';
 
-
-class Del3 extends StatefulWidget {
+class Del3 extends StatelessWidget {
   const Del3({Key? key}) : super(key: key);
 
   @override
-  State<Del3> createState() => _Del3State();
-}
-
-class _Del3State extends State<Del3> {
-  @override
   Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.topCenter,
-      color: Colors.red,
-      height: MediaQuery.of(context).size.height,
-      child: SafeArea(
-          child: Text(
-            "55555",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 32,
-            ),
-          )
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarColor: Colors.black)
+    );
+    return MaterialApp(
+      theme: ThemeData(
+        primaryColor: Colors.black,
       ),
+      debugShowCheckedModeBanner: false,
+      home: CameraScreen3(),
     );
   }
 }
