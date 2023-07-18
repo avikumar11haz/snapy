@@ -7,6 +7,7 @@ import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
 import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
 
+
 class CameraScreen3 extends StatefulWidget {
   const CameraScreen3({Key? key}) : super(key: key);
 
