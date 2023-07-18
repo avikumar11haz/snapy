@@ -6,7 +6,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
 import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
-
+import 'package:snapy/bottomnavbar_option3/preview_screen.dart';
 
 class CameraScreen3 extends StatefulWidget {
   const CameraScreen3({Key? key}) : super(key: key);
