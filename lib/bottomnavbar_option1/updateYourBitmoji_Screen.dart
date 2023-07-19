@@ -100,8 +100,8 @@ class _UpdateYourBitmojiState extends State<UpdateYourBitmoji> {
                           ],
                         ),),
                         const Spacer(),
-                        Padding(padding: const EdgeInsets.only(right: 4.0),
-                        child: Icon(
+                        const Padding(padding: EdgeInsets.only(right: 4.0),
+                         child: Icon(
                           Icons.arrow_forward_ios,
                           color: Colors.grey,
                         ),)
