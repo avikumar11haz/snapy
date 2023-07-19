@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:snapy/bottomnavbar_option1/updateYourBitmoji_Screen.dart';
 import 'package:snapy/bottomnavbar_option1/widgets/friendsBottomBar_widget.dart';
+import 'package:snapy/bottomnavbar_option1/widgets/myBitmojiBottomNavbar_widget.dart';
 import 'dart:collection';
 
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
