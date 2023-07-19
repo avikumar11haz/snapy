@@ -6,7 +6,6 @@ import 'package:vocsy_esys_flutter_share/vocsy_esys_flutter_share.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-// import 'package:flutter_icons/flutter_icons.dart';
 import 'package:path/path.dart';
 
 class PreviewScreen extends StatefulWidget{
@@ -42,7 +41,7 @@ class _PreviewScreenState extends State<PreviewScreen>{
                 color: Colors.black,
                 child: Center(
                   child: IconButton(
-                    icon: const Icon(Icons.arrow_forward_ios,
+                    icon: const Icon(Icons.share,
                       color: Colors.white,),
                     onPressed: (){
                       getBytesFromFile().then((bytes){

@@ -16,23 +16,22 @@ class CameraScreen3 extends StatefulWidget {
 }
 
 class _CameraScreen3State extends State<CameraScreen3> {
-  late CameraController controller;
-  late List cameras;
-  late int selectedCameraIndex;
-  late String imgPath;
+  CameraController? controller;
+  List? cameras;
+  int selectedCameraIndex =0;
+  String? imgPath;
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     availableCameras().then((availableCameras) {
       cameras = availableCameras;
 
-      if(cameras.length > 0){
+      if(cameras!.length > 0){
         setState(() {
           selectedCameraIndex = 0;
         });
-        _initCameraController(cameras[selectedCameraIndex]).then((void v) {});
+        _initCameraController(cameras![selectedCameraIndex]).then((void v) {});
       } else {
         print("No Camera available");
       }
@@ -43,31 +42,27 @@ class _CameraScreen3State extends State<CameraScreen3> {
 
   Future _initCameraController(CameraDescription cameraDescription) async {
     if(controller != null){
-      await controller.dispose();
+      await controller!.dispose();
     }
     controller = CameraController(cameraDescription, ResolutionPreset.high);
 
-    controller.addListener(() {
+    controller!.addListener(() {
       if(mounted){
-        setState(() {
-
-        });
+        setState(() {});
       }
-      if(controller.value.hasError){
-        print('Camera error ${controller.value.errorDescription}');
+      if(controller!.value.hasError){
+        print('Camera error ${controller!.value.errorDescription}');
       }
     });
 
     try {
-      await controller.initialize();
+      await controller!.initialize();
     } on CameraException catch (e) {
       _showCameraException(e);
     }
 
     if(mounted){
-      setState(() {
-
-      });
+      setState(() {});
     }
   }
 
@@ -83,7 +78,7 @@ class _CameraScreen3State extends State<CameraScreen3> {
                 children: <Widget>[
                   Expanded(
                       flex: 1,
-                      child: _cameraControllerWidget(context),  //context
+                      child: _cameraPreviewWidget(),  //context
                   )
                 ],
               ),
@@ -97,7 +92,7 @@ class _CameraScreen3State extends State<CameraScreen3> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
-                      _cameraControllerWidget(context), //context
+                      _cameraToggleRowWidget(),
                       _emojitog(),
                     ],
                   ),
@@ -241,7 +236,7 @@ class _CameraScreen3State extends State<CameraScreen3> {
   }
 
   Widget _cameraPreviewWidget(){
-    if(controller == null || !controller.value.isInitialized){
+    if(controller == null || !controller!.value.isInitialized){
       return const Text(
         'Loading',
         style: TextStyle(
@@ -252,8 +247,8 @@ class _CameraScreen3State extends State<CameraScreen3> {
       );
     }
     return AspectRatio(
-      aspectRatio: controller.value.aspectRatio,
-      child: CameraPreview(controller),);
+      aspectRatio: controller!.value.aspectRatio,
+      child: CameraPreview(controller!),);
   }
 
   Widget _cameraControllerWidget(context){
@@ -266,14 +261,18 @@ class _CameraScreen3State extends State<CameraScreen3> {
           FloatingActionButton(onPressed: (){
             _onCapturePressed(context);
           },
-           child: Container(
-            height: 45,
-            width: 45,
-            decoration: BoxDecoration(
-              border: Border.all(width: 2),
-              shape: BoxShape.circle,
+            child: Icon(
+              Icons.camera,
+              color: Colors.black,
             ),
-          ),
+          //  child: Container(
+          //   height: 45,
+          //   width: 45,
+          //   decoration: BoxDecoration(
+          //     border: Border.all(width: 2),
+          //     shape: BoxShape.circle,
+          //   ),
+          // ),
           backgroundColor: Colors.white,
           )
         ],
@@ -282,10 +281,10 @@ class _CameraScreen3State extends State<CameraScreen3> {
   }
 
   Widget _cameraToggleRowWidget(){
-    if(cameras == null || cameras.isEmpty){
+    if(cameras == null || cameras!.isEmpty){
       return Spacer();
     }
-    CameraDescription selectedCamera = cameras[selectedCameraIndex];
+    CameraDescription selectedCamera = cameras![selectedCameraIndex];
     CameraLensDirection lensDirection = selectedCamera.lensDirection;
 
     return Expanded(child: Align(
@@ -334,11 +333,11 @@ class _CameraScreen3State extends State<CameraScreen3> {
     String errorText = 'Error:${e.code}\nError message : ${e.description}';
     print(errorText);
   }
-  
+
   void _onCapturePressed(context) async {
     try {
       final path = join((await getTemporaryDirectory()).path, '${DateTime.now()}.png');
-      await controller.takePicture(path);
+      await controller!.takePicture(path);
 
       Navigator.push(context,
           MaterialPageRoute(builder: (context) => PreviewScreen(
@@ -352,8 +351,8 @@ class _CameraScreen3State extends State<CameraScreen3> {
 
   void _onSwitchCamera(){
     selectedCameraIndex =
-        selectedCameraIndex < cameras.length - 1 ? selectedCameraIndex + 1 : 0;
-    CameraDescription selectedCamera = cameras[selectedCameraIndex];
+        selectedCameraIndex < cameras!.length - 1 ? selectedCameraIndex + 1 : 0;
+    CameraDescription selectedCamera = cameras![selectedCameraIndex];
     _initCameraController(selectedCamera);
   }
 
