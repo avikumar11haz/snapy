@@ -5,6 +5,7 @@ import 'package:snapy/bottomnavbar_option1/updateYourBitmoji_Screen.dart';
 import 'package:snapy/bottomnavbar_option1/widgets/friendsBottomBar_widget.dart';
 import 'package:snapy/bottomnavbar_option1/widgets/myBitmojiBottomNavbar_widget.dart';
 import 'package:snapy/bottomnavbar_option1/widgets/myBitmoji_widget.dart';
+import 'package:snapy/bottomnavbar_option1/widgets/navigationBottomBar_widget.dart';
 import 'dart:collection';
 
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
@@ -59,7 +60,7 @@ class _Del1State extends State<Del1> {
               showModalBottomSheet(
                   context: context,
                   builder: (context){
-                    return UpdateYourBitmoji();
+                    return const UpdateYourBitmoji();
                   });
             },
             child: myBitmoji(),

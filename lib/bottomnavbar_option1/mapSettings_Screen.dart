@@ -15,7 +15,7 @@ class _MapSettingsState extends State<MapSettings> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(70),
+        preferredSize: const Size.fromHeight(70),
         child: Padding(
           padding: const EdgeInsets.only(top: 25),
           child: AppBar(
