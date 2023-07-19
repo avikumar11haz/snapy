@@ -33,7 +33,7 @@ class _Del1State extends State<Del1> {
 
   void _setCircles(){
     _circles.add(
-      Circle(
+      const Circle(
         circleId: CircleId("0"),
         center: LatLng(37.76493, -122.424332),
         radius: 1000,
@@ -135,8 +135,8 @@ class _Del1State extends State<Del1> {
                       ),
                     ),
                     Padding(padding: const EdgeInsets.only(left: 4, top: 8.0),
-                    child: Container(
-                      child: Text(
+                      child: Container(
+                        child: const Text(
                         "Srikar",
                         style: TextStyle(
                           color: Colors.white,
