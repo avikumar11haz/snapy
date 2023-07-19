@@ -134,9 +134,47 @@ class _Del1State extends State<Del1> {
                           fontWeight: FontWeight.w600
                         ),
                       ),
-                    ),)
+                    ),),
+                    const Spacer(),
+                    GestureDetector(
+                      onTap: (){
+                        showModalBottomSheet(
+                          isScrollControlled: true,
+                            context: context,
+                            builder: (context){
+                            return MapSettings();
+                            });
+                      },
+                      child: Container(
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.black38,
+                        ),
+                        child: Icon(
+                          Icons.settings,
+                          color: Colors.white,
+                          size: 30,
+                        ),
+                      ),
+                    )
                   ],
                 ),
+              ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  myBitmojiBottomNavBar(),
+                  navigationBottomNavBar(),
+                  friendsBottomNavBar()
+                ],
               ),
             ),
           )
