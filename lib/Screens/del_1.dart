@@ -3,6 +3,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'dart:collection';
 
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
+import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
 
 class Del1 extends StatefulWidget {
   const Del1({Key? key}) : super(key: key);
@@ -61,7 +62,7 @@ class _Del1State extends State<Del1> {
           Align(
             alignment: Alignment.topCenter,
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
@@ -81,7 +82,7 @@ class _Del1State extends State<Del1> {
                           isScrollControlled: true,
                             context: context,
                             builder: (context){
-                            return userDetails();
+                            return const UserDetails();
                             });
                       },
                       child: Padding(
@@ -91,7 +92,7 @@ class _Del1State extends State<Del1> {
                         child: Container(
                           height: 40,
                           width: 40,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.black38,
                           ),
@@ -151,7 +152,7 @@ class _Del1State extends State<Del1> {
                       child: Container(
                         height: 40,
                         width: 40,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                           color: Colors.black38,
                         ),
