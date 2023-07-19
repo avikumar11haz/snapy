@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 Widget ghostModeItemMaoSettings(){
   return Container(
-    padding: EdgeInsets.only(
+    padding: const EdgeInsets.only(
       top: 12, bottom: 12, left: 15, right: 15
     ),
     child: Row(
       children: [
-        Column(
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
@@ -18,7 +18,7 @@ Widget ghostModeItemMaoSettings(){
                 fontWeight: FontWeight.w600,
               ),
             ),
-            Padding(padding: const EdgeInsets.only(top: 4.0),
+            Padding(padding: EdgeInsets.only(top: 4.0),
             child: Text(
               "When this is enabled, your friends can't see your location",
               style: TextStyle(

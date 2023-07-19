@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:snapy/bottomnavbar_option1/mapSettings_Screen.dart';
 import 'package:snapy/bottomnavbar_option1/updateYourBitmoji_Screen.dart';
 import 'package:snapy/bottomnavbar_option1/widgets/friendsBottomBar_widget.dart';
 import 'package:snapy/bottomnavbar_option1/widgets/myBitmojiBottomNavbar_widget.dart';
@@ -150,7 +151,7 @@ class _Del1State extends State<Del1> {
                           isScrollControlled: true,
                             context: context,
                             builder: (context){
-                            return MapSettings();
+                            return const MapSettings();
                             });
                       },
                       child: Container(

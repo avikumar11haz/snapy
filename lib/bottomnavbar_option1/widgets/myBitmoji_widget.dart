@@ -5,7 +5,7 @@ Widget myBitmoji(){
     child: Container(
       height: 85,
       width: 75,
-      child: Image(
+      child: const Image(
         image: AssetImage("assets/image1.png"),
         fit: BoxFit.cover,
       ),
