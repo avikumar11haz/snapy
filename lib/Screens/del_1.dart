@@ -3,6 +3,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:snapy/bottomnavbar_option1/updateYourBitmoji_Screen.dart';
 import 'package:snapy/bottomnavbar_option1/widgets/friendsBottomBar_widget.dart';
 import 'package:snapy/bottomnavbar_option1/widgets/myBitmojiBottomNavbar_widget.dart';
+import 'package:snapy/bottomnavbar_option1/widgets/myBitmoji_widget.dart';
 import 'dart:collection';
 
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
@@ -16,7 +17,7 @@ class Del1 extends StatefulWidget {
 }
 
 class _Del1State extends State<Del1> {
-  Set<Circle> _circles = HashSet<Circle();
+  Set<Circle> _circles = HashSet<Circle>();
   bool _showMapStyle = false;
 
   late GoogleMapController _mapController;

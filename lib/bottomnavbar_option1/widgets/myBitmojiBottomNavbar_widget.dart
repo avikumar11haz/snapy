@@ -22,8 +22,8 @@ Widget myBitmojiBottomNavBar(){
           color: Colors.white,
           borderRadius: BorderRadius.circular(4)
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(2.0),
+        child: const Padding(
+          padding: EdgeInsets.all(2.0),
           child: Text(
             "My Bitmoji",
             style: TextStyle(
