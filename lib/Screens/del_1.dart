@@ -156,7 +156,7 @@ class _Del1State extends State<Del1> {
                           shape: BoxShape.circle,
                           color: Colors.black38,
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.settings,
                           color: Colors.white,
                           size: 30,
