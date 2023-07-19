@@ -16,8 +16,8 @@ class _UpdateYourBitmojiState extends State<UpdateYourBitmoji> {
         backgroundColor: Colors.grey[300],
         elevation: 0,
         automaticallyImplyLeading: false,
-        title: Padding(
-          padding: const EdgeInsets.all(18.0),
+        title: const Padding(
+          padding: EdgeInsets.all(18.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -27,7 +27,7 @@ class _UpdateYourBitmojiState extends State<UpdateYourBitmoji> {
                 fontSize: 24,
                 fontWeight: FontWeight.w600,
               ),),
-              Padding(padding: const EdgeInsets.only(top: 4.0),
+              Padding(padding: EdgeInsets.only(top: 4.0),
                 child: Text(
                   "Updates will last for 4 hours",
                   style: TextStyle(
@@ -59,7 +59,7 @@ class _UpdateYourBitmojiState extends State<UpdateYourBitmoji> {
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           color: Colors.black38,
                         ),
@@ -117,7 +117,18 @@ class _UpdateYourBitmojiState extends State<UpdateYourBitmoji> {
                       crossAxisSpacing: 12,
                       mainAxisSpacing: 12,
                       crossAxisCount: 3,
-                  children: <Widget>[],),)
+                  children: <Widget>[
+                    gridViewItem(),
+                    gridViewItem(),
+                    gridViewItem(),
+                    gridViewItem(),
+                    gridViewItem(),
+                    gridViewItem(),
+                    gridViewItem(),
+                    gridViewItem(),
+                    gridViewItem(),
+                    gridViewItem(),
+                  ],),)
                 ],
               ),
             ),
