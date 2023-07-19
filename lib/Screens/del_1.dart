@@ -9,20 +9,138 @@ class Del1 extends StatefulWidget {
 }
 
 class _Del1State extends State<Del1> {
+  Set<Circle> _circles = HashSet<Circle();
+  bool _showMapStyle = false;
+
+  late GoogleMapController _mapController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _setCircles();
+  }
+
+  void _setCircles(){
+    _circles.add(
+      Circle(
+        circleId: CircleId("0"),
+        center: LatLng(37.76493, -122.424332),
+        radius: 1000,
+        strokeWidth: 2,
+        fillColor: Color.fromRGBO(102, 51, 153, 0.5)
+      )
+    );
+  }
   @override
   Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.topCenter,
-      color: Colors.red,
-      height: MediaQuery.of(context).size.height,
-      child: SafeArea(
-          child: Text(
-            "55555",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 32,
+    return Scaffold(
+      body: Stack(
+        children: [
+          GoogleMap(
+            initialCameraPosition: CameraPosition(
+              target: LatLng(25.151100, 75.831720),
+              zoom: 12,
+            ),
+            myLocationEnabled: true,
+            myLocationButtonEnabled: true,
+          ),
+          GestureDetector(
+            onTap: (){
+              showModalBottomSheet(
+                  context: context,
+                  builder: (context){
+                    return UpdateYourBitmoji();
+                  });
+            },
+            child: myBitmoji(),
+          ),
+          Align(
+            alignment: Alignment.topCenter,
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Colors.black87,
+                    Colors.transparent,
+                  ],
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 20.0),
+                child: Row(
+                  children: [
+                    GestureDetector(
+                      onTap: (){
+                        showModalBottomSheet(
+                          isScrollControlled: true,
+                            context: context,
+                            builder: (context){
+                            return userDetails();
+                            });
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                          left: 8.0, right: 4, top: 8
+                        ),
+                        child: Container(
+                          height: 40,
+                          width: 40,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.black38,
+                          ),
+                          child: Icon(
+                            Icons.supervised_user_circle,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                        ),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (_) => Search()));
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                          left: 4, right: 4, top: 8.0,
+                        ),
+                        child: Container(
+                          height: 40,
+                          width: 40,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.black38
+                          ),
+                          child: Icon(
+                            Icons.search,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(padding: const EdgeInsets.only(left: 4, top: 8.0),
+                    child: Container(
+                      child: Text(
+                        "Srikar",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600
+                        ),
+                      ),
+                    ),)
+                  ],
+                ),
+              ),
             ),
           )
+        ],
       ),
     );
   }
