@@ -78,7 +78,7 @@ class _UpdateYourBitmojiState extends State<UpdateYourBitmoji> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                         ),),
-                        Padding(padding: const EdgeInsets.only(left: 8.0),
+                        const Padding(padding: EdgeInsets.only(left: 8.0),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
