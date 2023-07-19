@@ -81,7 +81,7 @@ class _MapSettingsState extends State<MapSettings> {
                   ),
                   ghostModeItemMaoSettings(),
                   settingsHeading(context, "who can see my location"),
-                  seeMyLocation("My Friends, true"),
+                  seeMyLocation("My Friends", true),
                   seeMyLocation("My Friends, Except ...", false),
                   seeMyLocation("Only These Friends ...", false),
                   settingsHeading(context, "Bitmoji"),

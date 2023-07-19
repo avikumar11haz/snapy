@@ -5,7 +5,7 @@ Widget chatItem(context, name, activeStory, time, loaded){
   return GestureDetector(
     onTap: (){
       Navigator.push(context,
-      MaterialPageRoute(builder: (_) =>  Chat()));
+      MaterialPageRoute(builder: (_) =>  Chat(name: ,)));
     },
     child: Padding(
       padding: const EdgeInsets.only(top: 4.0, bottom: 4),
@@ -41,7 +41,7 @@ Widget chatItem(context, name, activeStory, time, loaded){
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      width: MediaQuery.of(context).size.width,
+                      width: MediaQuery.of(context).size.width / 1.5,
                       child: Text(
                         name,
                         overflow: TextOverflow.clip,
@@ -105,7 +105,7 @@ Widget chatItem(context, name, activeStory, time, loaded){
                   )
                 )
               ),
-              child: Icon(
+              child: const Icon(
                 Icons.message_outlined,
                 color: Colors.grey,
               ),

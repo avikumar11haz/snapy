@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:snapy/bottomnavbar_option2/bottom_bar_chat_widget.dart';
-import 'package:snapy/bottomnavbar_option2/chat_message_widget.dart';
-import 'package:snapy/bottomnavbar_option2/date_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/bottom_bar_chat_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/chat_message_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/date_widget.dart';
 import 'package:snapy/bottomnavbar_option2/friends_details_screen.dart';
 
 class Chat extends StatefulWidget {
-  String name;
-  Chat({Key? key, required this.name}) : super(key: key);
 
+  Chat({Key? key, required this.name}) : super(key: key);
+  String name;
   @override
   State<Chat> createState() => _ChatState();
 }
@@ -45,7 +45,7 @@ class _ChatState extends State<Chat> {
             child: Padding(
               padding: const EdgeInsets.only(left: 15),
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.pink,
                   shape: BoxShape.circle,
                 ),
@@ -79,7 +79,7 @@ class _ChatState extends State<Chat> {
                 width: 50,
                 decoration: BoxDecoration(
                   color: Colors.grey[350],
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomRight: Radius.circular(18),
                     topRight: Radius.circular(18),
                   )
@@ -114,31 +114,31 @@ class _ChatState extends State<Chat> {
           ListView(
             children: [
               date("15 July 2023"),
-              chatMessage(context, Colors.blue, "How are You?"),
-              date("15 July 2023"),
-              chatMessage(context, Colors.red, "How are You?"),
-              date("15 July 2023"),
-              chatMessage(context, Colors.blue, "How are You?"),
-              date("15 July 2023"),
-              chatMessage(context, Colors.red, "How are You?"),
-              date("15 July 2023"),
-              chatMessage(context, Colors.blue, "How are You?"),
-              date("15 July 2023"),
-              chatMessage(context, Colors.red, "How are You?"),
-              date("15 July 2023"),
-              chatMessage(context, Colors.blue, "How are You?"),
-              date("15 July 2023"),
-              chatMessage(context, Colors.red, "How are You?"),
-              date("15 July 2023"),
-              chatMessage(context, Colors.blue, "How are You?"),
-              date("15 July 2023"),
-              chatMessage(context, Colors.red, "How are You?"),
-              date("15 July 2023"),
-              chatMessage(context, Colors.blue, "How are You?"),
-              date("15 July 2023"),
-              chatMessage(context, Colors.red, "How are You?"),
-              date("15 July 2023"),
-              chatMessage(context, Colors.blue, "How are You?"),
+              chatMessage(context, Colors.red, "Hey how are you?"),
+              chatMessage(context, Colors.blue,
+                  "I am fine. what about you long time no see i am feeling very sorry"),
+              chatMessage(context, Colors.red,
+                  "I am also fine. You also long time no see me."),
+              chatMessage(
+                  context, Colors.blue, "this chat is kind of annoying"),
+              chatMessage(context, Colors.red, "Hey how are you?"),
+              date("16 July 2023"),
+              chatMessage(context, Colors.blue,
+                  "I am fine. what about you long time no see i am feeling very sorry"),
+              chatMessage(context, Colors.red,
+                  "I am also fine. You also long time no see me."),
+              chatMessage(
+                  context, Colors.blue, "this chat is kind of annoying"),
+              date("18 July 2023"),
+              chatMessage(context, Colors.red, "Hey how are you?"),
+              chatMessage(context, Colors.blue,
+                  "I am fine. what about you long time no see i am feeling very sorry"),
+              chatMessage(context, Colors.red,
+                  "I am also fine. You also long time no see me."),
+              chatMessage(
+                  context, Colors.blue, "this chat is kind of annoying"),
+              date("Today"),
+              const SizedBox(height: 90)
             ],
           ),
           BottomBarChat1(context),
