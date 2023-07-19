@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'dart:collection';
 
+import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
 
 class Del1 extends StatefulWidget {
   const Del1({Key? key}) : super(key: key);
@@ -103,7 +106,7 @@ class _Del1State extends State<Del1> {
                     GestureDetector(
                       onTap: (){
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (_) => Search()));
+                            MaterialPageRoute(builder: (_) => const Search()));
                       },
                       child: Padding(
                         padding: const EdgeInsets.only(
