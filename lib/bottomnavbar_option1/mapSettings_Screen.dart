@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swipe_detector/flutter_swipe_detector.dart';
 import 'package:snapy/bottomnavbar_option1/widgets/bitmojiItemMapSettings_widget.dart';
 import 'package:snapy/bottomnavbar_option1/widgets/ghostModelItemMapSettings_widget.dart';
+import 'package:snapy/bottomnavbar_option1/widgets/seeMyLocation_widget.dart';
 
 class MapSettings extends StatefulWidget {
   const MapSettings({Key? key}) : super(key: key);

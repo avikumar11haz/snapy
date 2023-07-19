@@ -122,11 +122,11 @@ class _Del1State extends State<Del1> {
                         child: Container(
                           height: 40,
                           width: 40,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.black38
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.search,
                             color: Colors.white,
                             size: 30,
