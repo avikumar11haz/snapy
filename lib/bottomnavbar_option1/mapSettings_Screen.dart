@@ -23,7 +23,7 @@ class _MapSettingsState extends State<MapSettings> {
               onTap: (){
                 Navigator.pop(context);
               },
-              child: Icon(
+              child: const Icon(
                 Icons.keyboard_arrow_down,
                 color: Colors.black,
                 size: 30,
@@ -32,8 +32,8 @@ class _MapSettingsState extends State<MapSettings> {
             backgroundColor: Colors.white,
             elevation: 0,
             automaticallyImplyLeading: false,
-            title: Padding(
-              padding: const EdgeInsets.all(18.0),
+            title: const Padding(
+              padding: EdgeInsets.all(18.0),
               child: Text(
                 "Settings",
                 style: TextStyle(
