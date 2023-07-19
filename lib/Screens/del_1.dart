@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:snapy/bottomnavbar_option1/updateYourBitmoji_Screen.dart';
 import 'package:snapy/bottomnavbar_option1/widgets/friendsBottomBar_widget.dart';
 import 'dart:collection';
 
@@ -97,7 +98,7 @@ class _Del1State extends State<Del1> {
                             shape: BoxShape.circle,
                             color: Colors.black38,
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.supervised_user_circle,
                             color: Colors.white,
                             size: 30,

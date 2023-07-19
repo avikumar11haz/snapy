@@ -6,7 +6,7 @@ Widget bitmojiItemMapSettings(){
         top: 12, bottom: 12, left: 15, right: 15),
     child: Row(
       children: [
-        Text(
+        const Text(
           "Change My Outfit",
           style: TextStyle(
             color: Colors.black,

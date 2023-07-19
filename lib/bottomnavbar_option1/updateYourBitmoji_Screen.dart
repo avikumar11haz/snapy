@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swipe_detector/flutter_swipe_detector.dart';
+import 'package:snapy/bottomnavbar_option1/widgets/gridViewItem_widget.dart';
 
 class UpdateYourBitmoji extends StatefulWidget {
   const UpdateYourBitmoji({Key? key}) : super(key: key);
