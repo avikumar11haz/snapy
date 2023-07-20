@@ -4,6 +4,7 @@ import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/charm_it
 import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/chat_attachments_widget.dart';
 import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/private_friendships_widget.dart';
 import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/saved_inchat_item_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/snapMap_item_widget.dart';
 import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/snap_map_text_widget.dart';
 
 class FriendsDetails extends StatefulWidget {

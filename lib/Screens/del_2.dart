@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/chat_item_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/chatItemWidget/chat_item_widget.dart';
 import 'package:snapy/bottomnavbar_option2/start_new_chat_screen.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/chat_item_widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
 import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
