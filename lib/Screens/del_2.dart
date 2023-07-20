@@ -31,7 +31,7 @@ class _Del2State extends State<Del2> {
                   isScrollControlled: true,
                     context: context,
                     builder: (context){
-                    return UserDetails();
+                    return const UserDetails();
                     });
               },
               child: IconButton(onPressed: (){},
@@ -138,7 +138,7 @@ class _Del2State extends State<Del2> {
             ),
             children: <Widget>[
               chatItem(
-                context, "Parteek", true, "id", true
+                context, "Parteek", true, "1d", true
               ),
               const Divider(
                 thickness: 0.3,

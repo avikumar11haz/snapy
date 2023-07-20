@@ -192,4 +192,40 @@ class _Del5State extends State<Del5> {
       ),
     );
   }
+
+  void _openAddEntryDialog(){
+    Navigator.of(context).push(MaterialPageRoute<Null>(
+        builder: (BuildContext context){
+          return const AddEntryDialog();
+        },
+    fullscreenDialog: true));
+  }
+}
+
+class AddEntryDialog extends StatefulWidget {
+  const AddEntryDialog({Key? key}) : super(key: key);
+
+  @override
+  State<AddEntryDialog> createState() => _AddEntryDialogState();
+}
+
+class _AddEntryDialogState extends State<AddEntryDialog> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("New Entry"),
+        actions: [
+          TextButton(onPressed: (){},
+              child: const Text(
+                "Save",
+                style: TextStyle(
+                  color: Colors.white
+                ),
+              ))
+        ],
+      ),
+      body: const Text("Foo"),
+    );
+  }
 }

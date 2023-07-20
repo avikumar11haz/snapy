@@ -6,7 +6,7 @@ import 'package:snapy/bottomnavbar_option4/subscription_widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/subscribe_widget_item.dart';
-import 'package:snapy/bottomnavbar_option5/settings_screen.dart';
+//import 'package:snapy/bottomnavbar_option5/settings_screen.dart';
 //import 'package:snapy/bottomnavbar_option4/user_details_screen.dart';
 //import 'package:snapy/bottomnavbar_option5/Widgets/UserDetailsWidgets/forYou_widget.dart';
 import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
@@ -41,9 +41,9 @@ class _Del4State extends State<Del4> {
                     });
               },
               child: IconButton(onPressed: (){
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (_)=> const Settings())
-                );
+                // Navigator.push(
+                //     context, MaterialPageRoute(builder: (_)=> const Settings())
+                // );
               },
                 icon: Container(
                   height: 30,
@@ -239,7 +239,7 @@ class _Del4State extends State<Del4> {
               ),
               GestureDetector(
                 onTap: (){
-                  //print("Pushed");
+                  print("Pushed");
                   Navigator.push(context,
                   MaterialPageRoute(builder: (_)=> subscribeWidget(true)
                       //subscriptionScreen(),
@@ -320,4 +320,43 @@ class _Del4State extends State<Del4> {
       ),
     );
   }
+
+  void _openAddEntryDialog(){
+    Navigator.of(context).push(MaterialPageRoute<Null>(
+        builder: (BuildContext context){
+          return const  AddEntryDialog();
+        },
+    fullscreenDialog: true));
+  }
 }
+
+class AddEntryDialog extends StatefulWidget {
+  const AddEntryDialog({Key? key}) : super(key: key);
+
+  @override
+  State<AddEntryDialog> createState() => _AddEntryDialogState();
+}
+
+class _AddEntryDialogState extends State<AddEntryDialog> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("New entry"),
+        actions: [
+          TextButton(
+            onPressed: (){
+
+            },
+            child: const Text("Save",
+            style: TextStyle(
+              color: Colors.white
+            ),)
+          )
+        ],
+      ),
+     body: Text("Foo"),
+    );
+  }
+}
+

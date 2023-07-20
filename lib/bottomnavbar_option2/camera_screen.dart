@@ -11,7 +11,7 @@ class _CameraScreenState extends State<CameraScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: new Stack(
+      body: Stack(
         children: [
           Container(
             color: Colors.black,
@@ -30,14 +30,14 @@ class _CameraScreenState extends State<CameraScreen> {
                       onTap: (){
                         Navigator.pop(context);
                       },
-                      child: Icon(Icons.keyboard_arrow_down,
+                      child: const Icon(Icons.keyboard_arrow_down,
                       color: Colors.white,
                       size: 36,),
                     ),
                     Column(
                       children: [
                         Container(
-                          child: Text(
+                          child: const Text(
                             "Send To",
                             style: TextStyle(
                               color: Colors.white,
@@ -47,8 +47,8 @@ class _CameraScreenState extends State<CameraScreen> {
                           ),
                         ),
                         Container(
-                          child: Padding(
-                            padding: const EdgeInsets.only(top: 12.0),
+                          child: const Padding(
+                            padding: EdgeInsets.only(top: 12.0),
                             child: Text(
                               "Haz",
                               style: TextStyle(
@@ -66,15 +66,15 @@ class _CameraScreenState extends State<CameraScreen> {
                         color: Colors.white24,
                         borderRadius: BorderRadius.circular(16)
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
                         child: Column(
                           children: [
                             Icon(Icons.rotate_right,
                             color: Colors.white,
                             size: 30,),
-                            const SizedBox(height: 10,),
-                            const Icon(Icons.flash_off,
+                            SizedBox(height: 10,),
+                            Icon(Icons.flash_off,
                             color: Colors.white,
                             size: 30,)
                           ],
@@ -121,7 +121,7 @@ class _CameraScreenState extends State<CameraScreen> {
                           width: 3
                         )
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.emoji_emotions,
                         color: Colors.white,
                       ),

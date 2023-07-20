@@ -59,13 +59,14 @@ class _ChatState extends State<Chat> {
               Container(
                 height: 35,
                 width: 50,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
+                decoration: BoxDecoration(
+                  color: Colors.grey[350],
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(18),
                     topLeft: Radius.circular(18)
                   )
                 ),
-                child: Center(
+                child: const Center(
                   child: Icon(
                     Icons.call,
                     color: Colors.black,
@@ -84,7 +85,7 @@ class _ChatState extends State<Chat> {
                     topRight: Radius.circular(18),
                   )
                 ),
-                child: Center(
+                child: const Center(
                   child: Icon(
                     Icons.video_call,
                     size: 26,
