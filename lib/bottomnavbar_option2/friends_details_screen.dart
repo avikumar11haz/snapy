@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swipe_detector/flutter_swipe_detector.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/charm_item_widget.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/chat_attachments_widget.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/private_friendships_widget.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/saved_inchat_item_widget.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/snap_map_text_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/charm_item_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/chat_attachments_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/private_friendships_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/saved_inchat_item_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/snap_map_text_widget.dart';
 
 class FriendsDetails extends StatefulWidget {
   const FriendsDetails({Key? key}) : super(key: key);
@@ -34,8 +34,8 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                     onTap: (){
                       Navigator.pop(context);
                     },
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
                       child: Icon(
                         Icons.keyboard_arrow_down,
                         color: Colors.black,
@@ -44,10 +44,9 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                   ),
                   Row(
                     children: [
-                      Padding(padding: const EdgeInsets.only(
-                        left: 8.0, right: 8
-                      ),
-                      child: Icon(
+                      const Padding(padding: EdgeInsets.only(
+                        left: 8.0, right: 8),
+                       child: Icon(
                         Icons.supervised_user_circle,
                         color: Colors.blue,
                         size: 30,
@@ -67,11 +66,11 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                                 child: Column(
                                   children: [
                                     moreItems("Report", Colors.red, true),
-                                    Divider(height: 1,),
+                                    const Divider(height: 1,),
                                     moreItems("Block", Colors.red, true),
-                                    Divider(height: 1,),
+                                    const Divider(height: 1,),
                                     moreItems("Remove Friend", Colors.red, true),
-                                    Divider(height: 1,),
+                                    const Divider(height: 1,),
                                     moreItems("Edit Name", Colors.red, true),
                                     Divider(height: 1,),
                                     moreItems("Clear Conversation", Colors.red, true),
@@ -95,10 +94,10 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                                       child: Container(
                                         alignment: Alignment.center,
                                         height: 55,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Colors.white,
                                         ),
-                                        child: Text(
+                                        child: const Text(
                                           "Done",
                                           style: TextStyle(
                                             color: Colors.black,
@@ -113,7 +112,7 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                               ),);
                               });
                         },
-                        child: Icon(
+                        child: const Icon(
                           Icons.more_vert,
                           color: Colors.black,
                           size: 30,
@@ -170,9 +169,8 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                         ),
                       ),),
                       const Padding(padding: EdgeInsets.only(
-                        top: 30.0, bottom: 15
-                      ),
-                      child: Text(
+                        top: 30.0, bottom: 15),
+                       child: Text(
                         "34 KM away",
                         style: TextStyle(
                           color: Colors.grey,
@@ -181,12 +179,11 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                       ),),
                       friendshipsPrivate(context),
                       snapMapText1("Snap Map"),
-                      SizedBox(height: 4,),
+                      const SizedBox(height: 4,),
                       snapMapItem(),
                       snapMapText1("Saved in Chat"),
                       Padding(padding: const EdgeInsets.only(
-                        left: 15, right: 15
-                      ),
+                        left: 15, right: 15),
                         child: Container(
                           height: 160,
                           decoration: BoxDecoration(
@@ -218,9 +215,8 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                       chatAttachment(),
                       snapMapText1("Charms"),
                       Padding(padding: const EdgeInsets.only(
-                        left: 15.0
-                      ),
-                      child: Container(
+                        left: 15.0),
+                       child: Container(
                         height: 150,
                         child: ListView(
                           scrollDirection: Axis.horizontal,
@@ -236,17 +232,15 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                         ),
                       ),),
                       const Padding(padding: EdgeInsets.only(
-                        top: 38.0
-                      ),
-                      child: Icon(
+                        top: 38.0),
+                       child: Icon(
                         Icons.gavel_sharp,
                         color: Colors.grey,
                         size: 30,
                       ),),
                       const Padding(padding: EdgeInsets.only(
-                        top: 15.0
-                      ),
-                      child: Text(
+                        top: 15.0),
+                       child: Text(
                         "Friends with Haz since 31st May 2023",
                         style: TextStyle(
                           color: Colors.grey,

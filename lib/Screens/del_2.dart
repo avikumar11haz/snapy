@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:snapy/bottomnavbar_option2/chat_item_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/chat_item_widget.dart';
 import 'package:snapy/bottomnavbar_option2/start_new_chat_screen.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/chat_item_widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/AddFriends/add_friends_screen.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/search_screen.dart';
 import 'package:snapy/bottomnavbar_option5/userDetails_Screen.dart';
@@ -59,7 +60,7 @@ class _Del2State extends State<Del2> {
                   size: 30,
                 ),
             ),
-            Expanded(child: Center(
+            const Expanded(child: Center(
               child: Text(
                 "Chat",
                 style: TextStyle(

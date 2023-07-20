@@ -16,7 +16,7 @@ Widget BottomBarChat1(context) {
               GestureDetector(
                 onTap: (){
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (_)=> CameraScreen()));
+                      MaterialPageRoute(builder: (_)=> const CameraScreen()));
                 },
                 child: Padding(
                   padding: const EdgeInsets.only(left: 4.0),
@@ -45,8 +45,8 @@ Widget BottomBarChat1(context) {
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(18)
                 ),
-                padding: EdgeInsets.only(left: 15),
-                child: TextField(
+                padding: const EdgeInsets.only(left: 15),
+                child: const TextField(
                   autofocus: true,
                   decoration: InputDecoration(
                     border: InputBorder.none,
@@ -62,15 +62,15 @@ Widget BottomBarChat1(context) {
             ],
           ),
           const Spacer(),
-          Row(
+          const Row(
             children: [
-              Padding(padding: const EdgeInsets.only(
+              Padding(padding: EdgeInsets.only(
                 left: 4.0, right: 4),
               child: Icon(Icons.emoji_emotions),),
-              Padding(padding: const EdgeInsets.only(
+              Padding(padding: EdgeInsets.only(
                 left: 4.0, right: 4),
               child: Icon(Icons.image),),
-              Padding(padding: const EdgeInsets.only(
+              Padding(padding: EdgeInsets.only(
                   left: 4.0, right: 8),
                 child: Icon(Icons.radio_button_checked),),
             ],

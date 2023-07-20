@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:snapy/bottomnavbar_option2/user_name_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/user_name_widget.dart';
 
 class NewChat extends StatefulWidget {
   const NewChat({Key? key}) : super(key: key);
@@ -48,7 +48,7 @@ class _NewChatState extends State<NewChat> {
               thickness: 0.6,
               height: 0.5,
             ),
-            Row(
+            const Row(
               children: [
                 Text(
                   "To",
@@ -59,7 +59,7 @@ class _NewChatState extends State<NewChat> {
                   ),
                 ),
                 Flexible(child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: TextField(
                     autofocus: true,
                     decoration: InputDecoration(
@@ -97,10 +97,9 @@ class _NewChatState extends State<NewChat> {
             ),),
             const  Padding(padding: EdgeInsets.only(
               top: 12.0,
-              bottom: 12
-            ),
-            child: Text(
-              "Recents",
+              bottom: 12),
+             child: Text(
+              "RECENTS",
               style: TextStyle(
                 color: Colors.blue,
                 fontWeight: FontWeight.w600,

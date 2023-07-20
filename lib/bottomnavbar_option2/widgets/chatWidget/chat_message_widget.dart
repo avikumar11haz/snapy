@@ -17,7 +17,7 @@ Widget chatMessage(context, color, message) {
           ),
         ),
       ),
-      SizedBox(height: 2,),
+      const SizedBox(height: 2,),
       Container(
         width: MediaQuery.of(context).size.width,
         color: Colors.grey[350],
@@ -43,7 +43,7 @@ Widget chatMessage(context, color, message) {
                   message,
                   overflow: TextOverflow.ellipsis,
                   maxLines: 5,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
