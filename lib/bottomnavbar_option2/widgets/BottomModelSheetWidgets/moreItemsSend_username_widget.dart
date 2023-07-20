@@ -14,7 +14,7 @@ Widget moreItemsSendUsername(text1){
         children: [
           Text(
             text1,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.black,
               fontSize: 16,
               fontWeight: FontWeight.w600,
@@ -23,11 +23,11 @@ Widget moreItemsSendUsername(text1){
           Container(
             height: 40,
             width: 40,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.blue,
               shape: BoxShape.circle,
             ),
-            child: Center(
+            child: const Center(
               child: Icon(
                 Icons.send,
                 color: Colors.white,

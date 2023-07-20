@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swipe_detector/flutter_swipe_detector.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/BottomModelSheetWidgets/moreItemsSend_username_widget.dart';
 import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/charm_item_widget.dart';
 import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/chat_attachments_widget.dart';
 import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/private_friendships_widget.dart';
@@ -87,7 +88,7 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                                     moreItems("Mute Story", Colors.black, false),
                                     Divider(height: 1,),
                                     moreItemsSendUsername("Send Username"),
-                                    Divider(height: 1,),
+                                    const Divider(height: 1,),
                                     GestureDetector(
                                       onTap: (){
                                         Navigator.pop(context);
