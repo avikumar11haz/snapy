@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/user_name_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/NewChatWidget/user_name_widget.dart';
 
 class NewChat extends StatefulWidget {
   const NewChat({Key? key}) : super(key: key);

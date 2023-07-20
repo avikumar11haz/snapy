@@ -20,8 +20,8 @@ Widget twoItems(text1, text2){
         ),
         Text(
           text2,
-          style: const TextStyle(
-            color: Colors.grey
+          style: TextStyle(
+            color: Colors.grey[350]
           ),
         )
       ],

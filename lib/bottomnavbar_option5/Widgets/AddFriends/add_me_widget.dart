@@ -55,6 +55,43 @@ Widget addMe(name, username, method){
                 ),
               )
             ],
+          ),
+          const Spacer(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 25,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(12)
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.only(left: 8.0, right: 8),
+                      child: Icon(
+                        Icons.add,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                  const Text(
+                    "Accept",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 12
+                    ),
+                  )
+                ],
+              ),
+              const Padding(padding: EdgeInsets.only(left: 8.0, right: 8),
+                child: Icon(Icons.cancel_outlined),)
+            ],
           )
         ],
       ),

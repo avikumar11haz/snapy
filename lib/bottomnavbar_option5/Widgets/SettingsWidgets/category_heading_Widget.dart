@@ -5,7 +5,7 @@ Widget categoryHeading(context, text){
   child: Container(
     width: MediaQuery.of(context).size.width,
     decoration: BoxDecoration(
-      color: Colors.grey,
+      color: Colors.grey[300],
       borderRadius: BorderRadius.circular(8),
     ),
     child: Padding(

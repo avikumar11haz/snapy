@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/game&mini_widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/recentItem_widget.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/storyWidget_item.dart';
 import 'package:snapy/bottomnavbar_option5/Widgets/SearchScreen/subscribe_widget_item.dart';
@@ -100,8 +101,8 @@ class _SearchState extends State<Search> {
                       "Clear All",
                       style: TextStyle(
                           color: Colors.black,
-                          fontWeight: FontWeight.w700,
-                          fontSize: 18
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16
                       ),
                     ),
                   )
@@ -126,7 +127,7 @@ class _SearchState extends State<Search> {
                 ),
               ),
               Padding(padding: const EdgeInsets.only(bottom: 16.0, top: 16),
-              child: Row(
+               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
@@ -141,6 +142,39 @@ class _SearchState extends State<Search> {
                   )
                 ],
               ),),
+              Container(
+                height: 170,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.only(
+                    right: 8, bottom: 8, top: 4
+                  ),
+                  children: <Widget>[
+                    game_mini_widget(),
+                    game_mini_widget(),
+                    game_mini_widget(),
+                    game_mini_widget(),
+                    game_mini_widget(),
+                  ],
+                ),
+              ),
+              Padding(padding: const EdgeInsets.only(top: 16, bottom: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    child: const Text(
+                      "Popular Snap Stars",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700
+                      ),
+                    ),
+                  )
+                ],
+              ),),
+
               Container(
                 height: 65,
                 decoration: const BoxDecoration(

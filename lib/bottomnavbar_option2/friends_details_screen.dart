@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swipe_detector/flutter_swipe_detector.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/BottomModelSheetWidgets/moreItemsSend_username_widget.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/BottomModelSheetWidgets/moreItemsStoryNotification_widget.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/BottomModelSheetWidgets/moreItemsTwoText_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/BottomModelSheetWidgets/moreItemsSend_username_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/BottomModelSheetWidgets/moreItemsStoryNotification_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/BottomModelSheetWidgets/moreItemsTwoText_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/BottomModelSheetWidgets/moreItems_widget.dart';
 import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/charm_item_widget.dart';
 import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/chat_attachments_widget.dart';
 import 'package:snapy/bottomnavbar_option2/widgets/FriendsDetailsWidget/private_friendships_widget.dart';
@@ -76,15 +77,15 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                                     moreItems("Remove Friend", Colors.red, true),
                                     const Divider(height: 1,),
                                     moreItems("Edit Name", Colors.red, true),
-                                    Divider(height: 1,),
+                                    const Divider(height: 1,),
                                     moreItems("Clear Conversation", Colors.red, true),
-                                    Divider(height: 1,),
+                                    const Divider(height: 1,),
                                     moreItemsTwoText("Delete Chats", "24 Hours after Viewing"),
                                     const Divider(height: 1,),
                                     moreItemsTwoText("Message Notifications", "All Messages"),
                                     const Divider(height: 1,),
                                     moreItems("Mute Game and Mini Notifications", Colors.black, false),
-                                    Divider(height: 1,),
+                                    const Divider(height: 1,),
                                     moreItemsStoryNotifications("Story Notification"),
                                     const Divider(height: 1,),
                                     moreItems("Mute Story", Colors.black, false),

@@ -64,17 +64,29 @@ class _UserDetailsState extends State<UserDetails> {
         ),
       ),
       body: SwipeDetector(
+        onSwipeLeft: (offSet){
+          Navigator.pop(context);
+        },
+        onSwipeRight: (offSet){
+          Navigator.pop(context);
+        },
         child: Container(
           height: MediaQuery.of(context).size.height,
           child: Container(child: SingleChildScrollView(
             child: Column(
               children: [
-                Padding(padding: const EdgeInsets.only(top:18 ),
+                Padding(padding: const EdgeInsets.only(top:18.0),
                 child: Container(
                   height: 120,
                   width: 120,
                   decoration: BoxDecoration(
                     color: Colors.yellow,
+                    image: const DecorationImage(
+                      image: NetworkImage(
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTknc0m9TRX9ru56RsVnjSJi-O-vtfM9Y0cCx49eNaAMpKzDn2Oy1DzkvhiF5_M2XdJuNA&usqp=CAU"
+                      ),
+                      fit: BoxFit.cover
+                    ),
                     borderRadius: BorderRadius.circular(20)
                   ),
                 ),),
@@ -87,10 +99,10 @@ class _UserDetailsState extends State<UserDetails> {
                     fontWeight: FontWeight.w700,
                   ),
                 ),),
-                const Padding(padding: EdgeInsets.only(top: 8),
-                child: Text("callme_haz * 34,456 * U",
-                style: TextStyle(
-                  color: Colors.grey,
+                Padding(padding: EdgeInsets.only(top: 8),
+                 child: Text("callme_haz * 34,456 * U",
+                 style: TextStyle(
+                  color: Colors.grey[400],
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
                 ),
@@ -99,33 +111,24 @@ class _UserDetailsState extends State<UserDetails> {
                 const SizedBox(height: 4,),
                 AddTo("My"),
                 AddTo("Our"),
-                //TODO: private story widget
                 PrivateStory(),
-                //TODO: friends text
                 FriendsText(),
-                //TODO: friends section
                 FriendsSection("Add Friends", Icons.supervised_user_circle),
                 FriendsSection("My Friends", Icons.list_alt_outlined),
-                //TODO: Bitmoji text
                 BitmojiText(),
-                //TODO: Bitmoji Widget1
                 bitmojiWidget1(),
-                //TODO: Bitmoji Widget2
                 bitmojiWidget2(),
-                //TODO: Bitmoji Widget3
                 bitmojiWidget3(),
-                //Snap Map Text
                 snapMapText(),
-                //Snap map map
                 snapMap_Map(context),
 
-                const Padding(padding: EdgeInsets.only(top: 30),
+                const Padding(padding: EdgeInsets.only(top: 38.0),
                 child: Icon(
                   Icons.gavel_sharp,
                   color: Colors.grey,
                   size: 30,
                 ),),
-                const Padding(padding: EdgeInsets.only(top: 15),
+                const Padding(padding: EdgeInsets.only(top: 15.0),
                 child: Text("Joined Snapchat on 06 June 2023",
                 style: TextStyle(
                   color: Colors.grey,
@@ -138,14 +141,6 @@ class _UserDetailsState extends State<UserDetails> {
             ),
           ),),
         ),
-        onSwipeLeft: (offset) {
-          //_addSwipe(SwipeDirection.left);
-          Navigator.pop(context);
-        },
-        onSwipeRight: (offset) {
-          //_addSwipe(SwipeDirection.right);
-          Navigator.pop(context);
-        },
       ),
     );
   }
