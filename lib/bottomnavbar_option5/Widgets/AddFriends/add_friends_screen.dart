@@ -155,7 +155,7 @@ class _AddFriendsState extends State<AddFriends> {
               child: Column(
                 children: [
                   Padding(padding: const EdgeInsets.only(left: 15, top: 12, bottom: 12),
-                  child: Container(
+                   child: Container(
                     child: Text("Added Me",
                     style: TextStyle(
                       color: Colors.black,
@@ -165,9 +165,7 @@ class _AddFriendsState extends State<AddFriends> {
                     alignment: Alignment.centerLeft,
                   ),),
                   addMe("Mountain", "mountain3655", "By Search"),
-                  const Divider(
-                    height: 1,
-                  ),
+                  const Divider(height: 1,),
                   addMe("Parteek Kumar", "digital_parteek_39", "By Quick Add"),
                   const Divider(height: 1,),
                   addMe("Chirag Bajaj", "bajaj_cc_15", "By Phone"),

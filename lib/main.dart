@@ -16,26 +16,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a blue toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      title: 'Snapy',
+      // theme: ThemeData(
+      //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      //   useMaterial3: true,
+      // ),
       home: const MyHomePage(),
     );
   }
@@ -62,10 +47,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.black,
         ),
-        padding: EdgeInsets.only(top: 10),
+        padding: const EdgeInsets.only(top: 10),
         child: Row(
           children: [
             buildNavBarItem(Icons.home, 0),
@@ -93,13 +78,13 @@ class _MyHomePageState extends State<MyHomePage> {
         height: 55,
         width: MediaQuery.of(context).size.width/5,
         decoration: index == _selectedItemIndex?
-        BoxDecoration(border: Border(bottom: BorderSide(width: 4, color: Colors.green)),
+        BoxDecoration(border: const Border(bottom: BorderSide(width: 4, color: Colors.green)),
         gradient: LinearGradient(colors: [
           Colors.green.withOpacity(0.3),
           Colors.green.withOpacity(0.015),
         ], begin: Alignment.bottomCenter, end: Alignment.topCenter),
         )
-            :BoxDecoration(),
+            : const BoxDecoration(),
          child: Column(
            children: [
              Icon(icon,

@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:camera/camera.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -337,14 +339,14 @@ class _CameraScreen3State extends State<CameraScreen3> {
   void _onCapturePressed(context) async {
     try {
       final path = join((await getTemporaryDirectory()).path, '${DateTime.now()}.png');
-      await controller!.takePicture(path);
+      await controller!.takePicture();
 
       Navigator.push(context,
           MaterialPageRoute(builder: (context) => PreviewScreen(
             imgPath: path,
           ))
       );
-    } catch(e) {
+    } on CameraException catch(e) {
       _showCameraException(e);
     }
   }

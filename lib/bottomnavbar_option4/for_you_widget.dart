@@ -25,7 +25,7 @@ Widget forYou_widget(String headline, isVerified){
                 height: 1.4
             ),
           ),
-          Padding(padding: EdgeInsets.only(
+          Padding(padding: const EdgeInsets.only(
             left: 4,
             bottom: 2,
             top: 2

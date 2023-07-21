@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/bottom_bar_chat_widget.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/chat_message_widget.dart';
-import 'package:snapy/bottomnavbar_option2/widgets/date_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/chatWidget/bottom_bar_chat_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/chatWidget/chat_message_widget.dart';
+import 'package:snapy/bottomnavbar_option2/widgets/chatWidget/date_widget.dart';
 import 'package:snapy/bottomnavbar_option2/friends_details_screen.dart';
 
 class Chat extends StatefulWidget {
