@@ -8,7 +8,7 @@ Widget charmItem(){
     height: 130,
     width: 130,
     decoration: BoxDecoration(
-      boxShadow: [
+      boxShadow: const [
         BoxShadow(
           color: Colors.grey,
           spreadRadius: 2,

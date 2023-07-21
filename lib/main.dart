@@ -17,10 +17,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Snapy',
-      // theme: ThemeData(
-      //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      //   useMaterial3: true,
-      // ),
+      theme: ThemeData(
+        primarySwatch: Colors.purple
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        // useMaterial3: true,
+      ),
+      debugShowCheckedModeBanner: false,
       home: const MyHomePage(),
     );
   }
@@ -35,13 +37,13 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedItemIndex = 2;
-  late Color _color; //ch--
+  //late Color _color;
   final widgetOptions = [
-    Del1(),
-    Del2(),
-    Del3(),
-    Del4(),
-    Del5()
+    const Del1(),
+    const Del2(),
+    const Del3(),
+    const Del4(),
+    const Del5()
   ];
   @override
   Widget build(BuildContext context) {

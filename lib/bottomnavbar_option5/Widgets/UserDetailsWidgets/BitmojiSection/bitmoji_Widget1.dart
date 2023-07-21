@@ -28,9 +28,7 @@ Widget bitmojiWidget1(){
       children: [
         Row(
           children: [
-            //TODO: Bitmoji Icon
             bitmojiIcon(Icons.shopping_cart),
-            //TODO: BitmojiText2
             bitmojiText2("Change My Outfit"),
           ],
         ),

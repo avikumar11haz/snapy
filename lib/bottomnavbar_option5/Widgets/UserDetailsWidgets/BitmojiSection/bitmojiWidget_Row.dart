@@ -5,7 +5,7 @@ Widget bitmojiRow(displayNew){
     children: [
       displayNew?
           Container(
-            child: const Padding(
+            child: Padding(
               padding: EdgeInsets.only(
                 left: 12, right: 12, top: 6, bottom: 6,
               ),

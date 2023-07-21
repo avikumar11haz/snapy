@@ -34,7 +34,11 @@ class _Del2State extends State<Del2> {
                     return const UserDetails();
                     });
               },
-              child: IconButton(onPressed: (){},
+              child: IconButton(onPressed: (){
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (_)=> const UserDetails())
+                );
+              },
                 icon: Container(
                   height: 30,
                   width: 30,
@@ -149,7 +153,7 @@ class _Del2State extends State<Del2> {
               ),
               const Divider(thickness: 0.3, color: Colors.grey,),
               chatItem(
-                  context, "Yashi Srivastav", false, "7h", true
+                  context, "Yashi Srivastav", true, "7h", true
               ),
               const Divider(thickness: 0.3, color: Colors.grey,),
               chatItem(
@@ -157,11 +161,59 @@ class _Del2State extends State<Del2> {
               ),
               const Divider(thickness: 0.3, color: Colors.grey,),
               chatItem(
-                  context, "Jitesh Meena", false, "4h", true
+                  context, "Jitesh Meena", true, "4h", true
               ),
               const Divider(thickness: 0.3, color: Colors.grey,),
               chatItem(
-                  context, "Pihu", false, "9h", true
+                  context, "Pihu", true, "9h", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Sejal", false, "22m", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Chirag", true, "5h", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Ammie", true, "1h", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Ritik", false, "6h", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Kiran", true, "1m", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Ritika", false, "3h", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Chandan", false, "9h", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Emma", true, "20h", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Ivy", true, "1d", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Aadhya", false, "4h", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Avni", true, "8h", true
+              ),
+              const Divider(thickness: 0.3, color: Colors.grey,),
+              chatItem(
+                  context, "Divya", false, "2h", true
               ),
               const Divider(thickness: 0.3, color: Colors.grey,)
             ],

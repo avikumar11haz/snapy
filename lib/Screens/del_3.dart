@@ -15,7 +15,7 @@ class Del3 extends StatelessWidget {
         primaryColor: Colors.black,
       ),
       debugShowCheckedModeBanner: false,
-      home: CameraScreen3(),
+      home: const CameraScreen3(),
     );
   }
 }

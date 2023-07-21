@@ -164,7 +164,7 @@ class _CameraScreen3State extends State<CameraScreen3> {
                                     },
                                     child: const Padding(
                                       padding: EdgeInsets.only(
-                                        left: 45, right: 8.0
+                                        left: 45, right: 8.0, top: 8
                                       ),
                                       child: Icon(Icons.add_circle_outline_sharp,
                                       color: Colors.red,

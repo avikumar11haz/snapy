@@ -110,7 +110,7 @@ class _UpdateYourBitmojiState extends State<UpdateYourBitmoji> {
                     ),
                   ),),
                   SizedBox(height: MediaQuery.of(context).size.height,
-                  child: GridView.count(
+                   child: GridView.count(
                     shrinkWrap: false,
                       physics: BouncingScrollPhysics(),
                       primary: false,
@@ -118,7 +118,9 @@ class _UpdateYourBitmojiState extends State<UpdateYourBitmoji> {
                       crossAxisSpacing: 12,
                       mainAxisSpacing: 12,
                       crossAxisCount: 3,
-                  children: <Widget>[
+                   children: <Widget>[
+                    gridViewItem(),
+                    gridViewItem(),
                     gridViewItem(),
                     gridViewItem(),
                     gridViewItem(),

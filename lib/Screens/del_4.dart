@@ -41,9 +41,9 @@ class _Del4State extends State<Del4> {
                     });
               },
               child: IconButton(onPressed: (){
-                // Navigator.push(
-                //     context, MaterialPageRoute(builder: (_)=> const Settings())
-                // );
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (_)=> const UserDetails())
+                );
               },
                 icon: Container(
                   height: 30,

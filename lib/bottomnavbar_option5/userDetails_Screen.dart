@@ -26,9 +26,9 @@ class _UserDetailsState extends State<UserDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(70),
+        preferredSize: const Size.fromHeight(50),
         child: Padding(
-          padding: const EdgeInsets.only(top: 25),
+          padding: const EdgeInsets.only(top: 8),
           child: AppBar(
             backgroundColor: Colors.white,
             elevation: 5,
@@ -44,7 +44,7 @@ class _UserDetailsState extends State<UserDetails> {
                   child: const Padding(
                     padding: EdgeInsets.all(8),
                     child: Icon(
-                      Icons.keyboard_arrow_down,
+                      Icons.keyboard_arrow_left,
                       color: Colors.black,
                     ),
                   ),
@@ -99,7 +99,7 @@ class _UserDetailsState extends State<UserDetails> {
                     fontWeight: FontWeight.w700,
                   ),
                 ),),
-                Padding(padding: EdgeInsets.only(top: 8),
+                Padding(padding: const EdgeInsets.only(top: 8),
                  child: Text("callme_haz * 34,456 * U",
                  style: TextStyle(
                   color: Colors.grey[400],

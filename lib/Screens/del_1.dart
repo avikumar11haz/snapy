@@ -26,7 +26,6 @@ class _Del1State extends State<Del1> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _setCircles();
   }
@@ -47,7 +46,7 @@ class _Del1State extends State<Del1> {
     return Scaffold(
       body: Stack(
         children: [
-          GoogleMap(
+          const GoogleMap(
             initialCameraPosition: CameraPosition(
               target: LatLng(25.151100, 75.831720),
               zoom: 12,

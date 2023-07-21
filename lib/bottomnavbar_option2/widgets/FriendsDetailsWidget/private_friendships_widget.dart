@@ -26,7 +26,7 @@ Widget friendshipsPrivate(context){
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               "Friendships are private",
               style: TextStyle(
                 color: Colors.black,
@@ -37,7 +37,7 @@ Widget friendshipsPrivate(context){
             Padding(padding: const EdgeInsets.only(right: 8.0, top: 12),
             child: Container(
               width: MediaQuery.of(context).size.width / 1.9,
-              child: Text(
+              child: const Text(
                 "Screensooting friendsip profiles wiil sending",
                 maxLines: 3,
                 style: TextStyle(
@@ -50,7 +50,7 @@ Widget friendshipsPrivate(context){
             ),)
           ],
         ),
-        Padding(padding: const EdgeInsets.only(right: 15.0),
+        const Padding(padding: EdgeInsets.only(right: 15.0),
         child: Icon(Icons.cancel_outlined,
         color: Colors.grey,
         ),)
